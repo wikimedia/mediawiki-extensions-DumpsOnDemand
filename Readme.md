@@ -1,6 +1,8 @@
 # DumpsOnDemand
 
-DumpsOnDemand allows users to request a database dump on the wiki. Database dumps can be downloaded from Special:RequestDump. If the user has the `dumpsondemand` right, they can request a new dump whenever they like.
+DumpsOnDemand allows users to request and download database dumps on the wiki. Database dumps can be downloaded from Special:RequestDump. If the user has the `dumpsondemand` right, they can request a new dump whenever they like.
+
+DumpsOnDemand is based on the [Dumps](https://github.com/Wikia/app/tree/dev/extensions/wikia/WikiFactory/Dumps) sub-extension for Wikia's WikiFactory extension
 
 ## Flavours
 DumpsOnDemand provides two dumps: a dump containing only the current revisions, suitable for bot use and a dump containing all revisions, suitable for archiving.
@@ -20,7 +22,7 @@ DumpsOnDemand supports three compressed output formats: Gzip (`gz`), Bzip2 (`bz2
   * `bz2` for BZip2
   * `zip` for Zip
 * `$wgDumpsOnDemandRequestLimit` - This setting configures the time between subsequent dump requests. It specifies an amount in seconds that should have passed before a new dump can be requested. Users with the `dumpsondemand-limit-exempt` right can ignore this restriction.
-* `DumpsOnDemandFileBackend` - This setting specifies an ObjectFactory spec for a FileBackend instance. The provided object will be used by DumpsOnDemand to write the dumps too and read the urls from. DumpsOnDemand only provides a backend that writes to `$wgUploadDirectory`, but you can add your own by extending the `FileBackend` class and specifying it in this setting.
+* `$wgDumpsOnDemandFileBackend` - This setting specifies an ObjectFactory spec for a FileBackend instance. The provided object will be used by DumpsOnDemand to write the dumps too and read the urls from. DumpsOnDemand only provides a backend that writes to `$wgUploadDirectory`, but you can add your own by extending the `FileBackend` class and specifying it in this setting.
 
 ### User rights
 DumpsOnDemand adds three user rights:
