@@ -31,7 +31,7 @@
 		]
 	},
 	"ExtensionMessagesFiles": {
-		"DumpsOnDemandAlias": "DumpsOnDemandAlias.php"
+		"DumpsOnDemandAlias": "DumpsOnDemand.alias.php"
 	},
 	"ServiceWiringFiles": [
 		"src/ServiceWiring.php"

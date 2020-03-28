@@ -25,7 +25,7 @@
 	"right-dumpsondemand-limit-exempt": "Ignore the time limit for requesting database dumps",
 	"action-dumpsondemand-limit-exempt": "ignore the time limit for requesting database dumps",
 	"dumpsondemand-dump-requested": "A dump has been requested.",
-	"dumpsondemand-filetype-gz": "The dumps will be provided as a gzip compressed xml file.",
-	"dumpsondemand-filetype-bz2": "The dumps will be provided as a bzip2 compressed xml file.",
-	"dumpsondemand-filetype-zip": "The dumps will be provided in a zip file."
+	"dumpsondemand-filetype-gz": "The dumps will be provided as a gzip compressed XML file.",
+	"dumpsondemand-filetype-bz2": "The dumps will be provided as a bzip2 compressed XML file.",
+	"dumpsondemand-filetype-zip": "The dumps will be provided in a ZIP file."
 }
