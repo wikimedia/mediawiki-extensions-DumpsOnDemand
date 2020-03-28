@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"dumpsondemand-desc": "{{desc|name=DumpsOnDemand|url=https://www.mediawiki.org/wiki/Extension:DumpsOnDemand}}",
+	"dumpsondemand-extensionname": "{{name}}",
+	"requestdump": "{{doc-special|RequestDump}}",
+	"requestdump-text": "Description appearing on top of Special:RequestDump.",
+	"dumpsondemand-current-revisions": "Description text for the field with a button to the dump with only the current revisions.",
+	"dumpsondemand-current-revisions-help": "Help text for the dump with only the current revisions.",
+	"dumpsondemand-all-revisions": "Description text for the button with a link to the dump with all revisions.",
+	"dumpsondemand-all-revisions-help": "Help text for the dump with all revisions.",
+	"dumpsondemand-request-dump-button-label": "Submit button text shown when the user can request a new database dump.",
+	"dumpsondemand-dump-already-requested": "Submit button text shown when a dump has already been requested and the user cannot request a new one at this time.",
+	"dumpsondemand-dump-unavailable": "Button text when the dump file does not exist and is yet to be created.",
+	"log-name-dumprequest": "{{doc-logpage}}",
+	"log-description-dumprequest": "The Special:Log description that appears on the Special:Log page when logs are filtered on this specific log name.",
+	"logentry-dumprequest": "{{logentry|[[Special:Log/dumprequest]]}}",
+	"right-dumpsondemand": "{{doc-right|dumpsondemand}}",
+	"action-dumpsondemand": "{{doc-action|dumpsondemand}}",
+	"right-dumpsondemand-limit-exempt": "{{doc-right|dumpsondemand-limit-exempt}}",
+	"action-dumpsondemand-limit-exempt": "{{doc-action|dumpsondemand-limit-exempt}}",
+	"right-dumprequestlog": "{{doc-right|dumprequestlog}}",
+	"action-dumprequestlog": "{{doc-action|dumprequestlog}}",
+	"dumpsondemand-dump-requested": "This message appears after a dump has been requested.",
+	"dumpsondemand-filetype-gz": "Description shown when the dumps will be provided as a gzip compressed xml file.",
+	"dumpsondemand-filetype-bz2": "Description shown when the dumps will be provided as a bzip2 compressed xml file.",
+	"dumpsondemand-filetype-zip": "Description shown when the dumps will be provided as a zip file."
+}

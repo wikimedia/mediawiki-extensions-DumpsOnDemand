@@ -1,0 +1,80 @@
+{
+	"name": "DumpsOnDemand",
+	"version": "1.0.0",
+	"author": [
+		"Mainframe98"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:DumpsOnDemand",
+	"descriptionmsg": "dumpsondemand-desc",
+	"namemsg": "dumpsondemand-extensionname",
+	"license-name": "MIT",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">=1.35.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extensions\\DumpsOnDemand\\": "src/"
+	},
+	"SpecialPages": {
+		"RequestDump": {
+			"class": "MediaWiki\\Extensions\\DumpsOnDemand\\Specials\\SpecialRequestDump",
+			"services": [
+				"PermissionManager",
+				"DumpsOnDemandFileBackend",
+				"ConfigFactory"
+			]
+		}
+	},
+	"MessagesDirs": {
+		"DumpsOnDemand": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"DumpsOnDemandAlias": "DumpsOnDemandAlias.php"
+	},
+	"ServiceWiringFiles": [
+		"src/ServiceWiring.php"
+	],
+	"ConfigRegistry": {
+		"DumpsOnDemand": "GlobalVarConfig::newInstance"
+	},
+	"config": {
+		"DumpsOnDemandUseDefaultJobQueue": {
+			"value": false
+		},
+		"DumpsOnDemandCompression": {
+			"value": null
+		},
+		"DumpsOnDemandRequestLimit": {
+			"value": 604800
+		},
+		"DumpsOnDemandDumpFileBackend": {
+			"value": {
+				"class": "MediaWiki\\Extensions\\DumpsOnDemand\\Backend\\LocalFileBackend",
+				"services": [
+					"MainConfig"
+				]
+			}
+		}
+	},
+	"LogTypes": [
+		"dumprequest"
+	],
+	"LogActions": {
+		"dumprequest/dumprequest": "logentry-dumprequest"
+	},
+	"LogRestrictions": {
+		"dumprequest": "dumprequestlog"
+	},
+	"JobClasses": {
+		"DatabaseDumpGeneration": "MediaWiki\\Extensions\\DumpsOnDemand\\Jobs\\DoDatabaseDumpJob"
+	},
+	"AvailableRights": [
+		"dumprequestlog",
+		"dumpsondemand",
+		"dumpsondemand-limit-exempt"
+	],
+	"manifest_version": 2,
+	"callback": "MediaWiki\\Extensions\\DumpsOnDemand\\Hooks::onRegistration"
+}

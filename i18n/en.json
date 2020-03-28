@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"dumpsondemand-desc": "Allows priviliged users to request database dumps",
+	"dumpsondemand-extensionname": "DumpsOnDemand",
+	"requestdump": "Request a database dump",
+	"requestdump-text": "Database dumps can be used as a personal backup or for maintenance bots. All requests are logged in the [[Special:Log/dumprequest|database dump request log]].",
+	"dumpsondemand-current-revisions": "All pages with only the current revisions",
+	"dumpsondemand-current-revisions-help": "This version is the most suitable for bot use.",
+	"dumpsondemand-all-revisions": "All pages with their history",
+	"dumpsondemand-all-revisions-help": "This versions is the most suitable for backups. Warning: This file may be very large!",
+	"dumpsondemand-request-dump-button-label": "Request a new dump",
+	"dumpsondemand-dump-already-requested": "A dump has already been requested",
+	"dumpsondemand-dump-unavailable": "This dump has not yet been created",
+	"log-name-dumprequest": "Database dump request log",
+	"log-description-dumprequest": "These events track when a database dump is requested.",
+	"logentry-dumprequest": "{{GENDER:$2|requested}} a database dump",
+	"right-dumpsondemand": "Request database dumps on demand",
+	"action-dumpsondemand": "request database dumps on demand",
+	"right-dumprequestlog": "View the database dump request log",
+	"action-dumprequestlog": "view the database dump request log",
+	"right-dumpsondemand-limit-exempt": "Ignore the time limit for requesting database dumps",
+	"action-dumpsondemand-limit-exempt": "ignore the time limit for requesting database dumps",
+	"dumpsondemand-dump-requested": "A dump has been requested.",
+	"dumpsondemand-filetype-gz": "The dumps will be provided as a gzip compressed xml file.",
+	"dumpsondemand-filetype-bz2": "The dumps will be provided as a bzip2 compressed xml file.",
+	"dumpsondemand-filetype-zip": "The dumps will be provided in a zip file."
+}
