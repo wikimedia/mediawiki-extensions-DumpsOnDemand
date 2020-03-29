@@ -4,14 +4,14 @@
 			"Mainframe98"
 		]
 	},
-	"dumpsondemand-desc": "Allows priviliged users to request database dumps",
+	"dumpsondemand-desc": "Allows privileged users to request database dumps",
 	"dumpsondemand-extensionname": "DumpsOnDemand",
 	"requestdump": "Request a database dump",
-	"requestdump-text": "Database dumps can be used as a personal backup or for maintenance bots. All requests are logged in the [[Special:Log/dumprequest|database dump request log]].",
+	"requestdump-text": "Database dumps can be used as a personal backup or for maintenance bots. All requests are logged into the [[Special:Log/dumprequest|database dump request log]].",
 	"dumpsondemand-current-revisions": "All pages with only the current revisions",
 	"dumpsondemand-current-revisions-help": "This version is the most suitable for bot use.",
 	"dumpsondemand-all-revisions": "All pages with their history",
-	"dumpsondemand-all-revisions-help": "This versions is the most suitable for backups. Warning: This file may be very large!",
+	"dumpsondemand-all-revisions-help": "This version is the most suitable for backups. Warning: This file may be very large!",
 	"dumpsondemand-request-dump-button-label": "Request a new dump",
 	"dumpsondemand-dump-already-requested": "A dump has already been requested",
 	"dumpsondemand-dump-unavailable": "This dump has not yet been created",
