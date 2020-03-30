@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"dumpsondemand-current-revisions": "Alle pagina's met alleen de huidige versies",
+	"dumpsondemand-current-revisions-help": "Deze versie is het meest geschikt voor het gebruik door bots.",
+	"dumpsondemand-all-revisions": "Alle pagina's met hun geschiedenis",
+	"dumpsondemand-all-revisions-help": "Deze versie is het meest geschikt voor backups. Waarschuwing: Dit bestand kan erg groot zijn!"
+}

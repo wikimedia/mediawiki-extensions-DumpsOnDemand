@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"dumpsondemand-desc": "Ayrıcalıklı kullanıcıların veritabanı dökümlerini istemesine izin verir",
+	"requestdump": "Veritabanı dökümü iste",
+	"requestdump-text": "Veritabanı dökümleri kişisel yedekleme veya bakım botları için kullanılabilir. Tüm istekler [[Special:Log/dumprequest|veritabanı dökümü istek günlüğü]] içine kaydedilir.",
+	"dumpsondemand-current-revisions": "Yalnızca güncel düzeltmeleri olan tüm sayfalar",
+	"dumpsondemand-current-revisions-help": "Bu sürüm bot kullanımı için en uygun olanıdır.",
+	"dumpsondemand-all-revisions": "Geçmişi olan tüm sayfalar",
+	"dumpsondemand-all-revisions-help": "Bu sürümler yedeklemeler için en uygun olanıdır. Uyarı: Bu dosya çok büyük olabilir!",
+	"dumpsondemand-request-dump-button-label": "Yeni bir döküm isteyin",
+	"dumpsondemand-dump-already-requested": "Bir dökümü zaten istendi",
+	"dumpsondemand-dump-unavailable": "Bu dökümü henüz oluşturulmadı",
+	"log-name-dumprequest": "Veritabanı dökümü istek günlüğü",
+	"log-description-dumprequest": "Bu olaylar bir veritabanı dökümü istendiğinde izler.",
+	"logentry-dumprequest": "bir veritabanı dökümü {{GENDER:$2|talep edildi}}",
+	"right-dumpsondemand": "Talep üzerine veritabanı dökümü talep edin",
+	"action-dumpsondemand": "talep üzerine veritabanı dökümü talep edin",
+	"right-dumprequestlog": "Veritabanı dökümü istek günlüğünü görüntüle",
+	"action-dumprequestlog": "veritabanı dökümü istek günlüğünü görüntüle",
+	"right-dumpsondemand-limit-exempt": "Veritabanı dökümü isteme için zaman sınırını yoksay",
+	"action-dumpsondemand-limit-exempt": "veritabanı dökümü isteme için zaman sınırını yoksay",
+	"dumpsondemand-dump-requested": "Bir döküm talep edildi.",
+	"dumpsondemand-filetype-gz": "Dökümler bir gzip sıkıştırılmış XML dosyası olarak sağlanacaktır.",
+	"dumpsondemand-filetype-bz2": "Dökümler, bir bzip2 sıkıştırılmış XML dosyası olarak sağlanacaktır.",
+	"dumpsondemand-filetype-zip": "Dökümler bir ZIP dosyasında sağlanacaktır."
+}

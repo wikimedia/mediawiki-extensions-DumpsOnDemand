@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"dumpsondemand-desc": "Им овозможува на привилегираните корисници да бараат резервни примероци од базата",
+	"requestdump": "Побарај резервен примерок на базата",
+	"requestdump-text": "Резервните примероци на базата служат како лична резерва или за ботовите за одржување. Сите барања се заведуваат во [[Special:Log/dumprequest|дневникот на такви барања]].",
+	"dumpsondemand-current-revisions": "Сите страници со само тековни преработки",
+	"dumpsondemand-current-revisions-help": "Оваа верзија е најпогодна за ботовска употреба.",
+	"dumpsondemand-all-revisions": "Сите страници со нивната историја",
+	"dumpsondemand-all-revisions-help": "Овие верзии се најпогодни за резерви. Предупредување: Податотекава може да биде многу голема!",
+	"dumpsondemand-request-dump-button-label": "Побарај нов резервен примерок",
+	"dumpsondemand-dump-already-requested": "Веќе е побаран резервен примерок",
+	"dumpsondemand-dump-unavailable": "Резервниот примерок сè уште не е создаден",
+	"log-name-dumprequest": "Невник на барања за резервни примероци",
+	"log-description-dumprequest": "Овие настани ги следат барањата за резервни примероци од базата.",
+	"logentry-dumprequest": "{{GENDER:$2|побара}} резервен примерок",
+	"right-dumpsondemand": "Добивање резервен примерок од базата по барање",
+	"action-dumpsondemand": "добивање резервен примерок од базата по барање",
+	"right-dumprequestlog": "Преглед на дневникот на барања на резервни примероци",
+	"action-dumprequestlog": "гледате дневник на барања на резервни примероци",
+	"right-dumpsondemand-limit-exempt": "Занемарување на временското ограничување за барање на резервни примероци",
+	"action-dumpsondemand-limit-exempt": "занемарување на временското ограничување за барање на резервни примероци",
+	"dumpsondemand-dump-requested": "Резервниот примерок е побаран.",
+	"dumpsondemand-filetype-gz": "Резервните примероци ќе бидат доставени како XML-податоека набиена во gzip",
+	"dumpsondemand-filetype-bz2": "Резервните примероци ќе бидат доставени како XML-податоека набиена во bzip2",
+	"dumpsondemand-filetype-zip": "Резервните примероци ќе бидат доставени во ZIP-податотека"
+}

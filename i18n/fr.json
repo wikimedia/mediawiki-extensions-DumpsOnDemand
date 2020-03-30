@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wladek92"
+		]
+	},
+	"dumpsondemand-current-revisions-help": "Cette version est la plus adaptée à une utilisation par robot.",
+	"dumpsondemand-all-revisions": "Toutes les pages avec leur historique",
+	"logentry-dumprequest": "{{GENDER:$2|a demandé}} le vidage de la base de données"
+}

@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Piramidion"
+		]
+	},
+	"dumpsondemand-desc": "Дозволяє привілейованим користувачам подавати запити на дампи бази даних",
+	"requestdump": "Подати запит на дамп бази даних",
+	"requestdump-text": "Дампи бази даних можна використовувати як персональну резервну копію, або для ботів, що займаються технічним обслуговуванням. Усі запити потрапляють у [[Special:Log/dumprequest|журнал запитів на дамп бази даних]].",
+	"dumpsondemand-current-revisions": "Усі сторінки із лише поточними версіями",
+	"dumpsondemand-current-revisions-help": "Ця версія є найбільш придатною до використання ботом.",
+	"dumpsondemand-all-revisions": "Усі сторінки з їхніми історіями",
+	"dumpsondemand-all-revisions-help": "Ці версії є найбільш прийнятними для резервного копіювання. Попередження: цей файл може бути дуже великим!",
+	"dumpsondemand-request-dump-button-label": "Подати запит на новий дамп",
+	"dumpsondemand-dump-already-requested": "Запит на дамп уже подано",
+	"dumpsondemand-dump-unavailable": "Цей дамп ще не створено",
+	"log-name-dumprequest": "Журнал запитів на дамп бази даних",
+	"log-description-dumprequest": "Ці події відстежують подання запитів на дамп бази даних.",
+	"logentry-dumprequest": "{{GENDER:$2|подав|подала}} запит на дамп бази даних",
+	"right-dumpsondemand": "Подання запитів на дампи на вимогу",
+	"action-dumpsondemand": "подання запитів на дампи на вимогу",
+	"right-dumprequestlog": "Перегляд журналу запитів на дамп бази даних",
+	"action-dumprequestlog": "перегляд жрурналу запитів на дамп бази даних",
+	"right-dumpsondemand-limit-exempt": "Ігнорування часових обмежень для подання запитів на дампи бази даних",
+	"action-dumpsondemand-limit-exempt": "ігнорування часових обмежень для подання запитів на дампи бази даних",
+	"dumpsondemand-dump-requested": "Подано запит на дамп.",
+	"dumpsondemand-filetype-gz": "Ці дампи буде надано як XML-файл, стиснений у gzip.",
+	"dumpsondemand-filetype-bz2": "Ці дампи буде надано як XML-файл, стиснений у bzip2.",
+	"dumpsondemand-filetype-zip": "Ці дампи буде надано у формі ZIP-файлу."
+}
