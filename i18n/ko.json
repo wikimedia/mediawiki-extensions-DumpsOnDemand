@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"requestdump": "데이터베이스 덤프 요청",
+	"dumpsondemand-all-revisions": "역사가 있는 모든 문서",
+	"dumpsondemand-request-dump-button-label": "새 덤프 요청",
+	"dumpsondemand-dump-already-requested": "덤프가 이미 요청되었습니다",
+	"dumpsondemand-dump-unavailable": "이 덤프는 아직 만들어지지 않았습니다",
+	"log-name-dumprequest": "데이터베이스 덤프 요청 기록",
+	"dumpsondemand-dump-requested": "덤프가 요청되었습니다.",
+	"dumpsondemand-filetype-zip": "덤프는 ZIP 파일로 제공됩니다."
+}

@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido"
+		]
+	},
+	"requestdump": "Solicitar volcado de base de datos",
+	"dumpsondemand-dump-already-requested": "Ya se ha solicitado un volcado",
+	"dumpsondemand-dump-unavailable": "Todavía no se ha creado este volcado",
+	"dumpsondemand-dump-requested": "Se ha solicitado un volcado.",
+	"dumpsondemand-filetype-bz2": "Los volcados se proporcionarán como un archivo XML comprimido con bzip2."
+}
