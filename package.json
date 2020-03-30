@@ -2,10 +2,11 @@
 	"private": true,
 	"scripts": {
 		"test": "npm -s run lint",
-		"lint": "npm -s run lint:i18n",
+		"lint": "eslint --ext .json . && npm -s run lint:i18n",
 		"lint:i18n": "banana-checker i18n/"
 	},
 	"devDependencies": {
+		"eslint-config-wikimedia": "0.15.0",
 		"grunt-banana-checker": "0.8.1"
 	}
 }
