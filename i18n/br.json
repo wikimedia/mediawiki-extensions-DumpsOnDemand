@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fulup"
+		]
+	},
+	"requestdump": "Goulenn un dump eus an diaz roadennoù",
+	"dumpsondemand-current-revisions-help": "Azasoc'h eo ar stumm-mañ evit bezañ implijet gant robotoù.",
+	"logentry-dumprequest": "{{GENDER:$2|en deus goulennet|he deus goulennet}} un dump eus an diaz roadennoù",
+	"dumpsondemand-dump-requested": "Goulennet ez bet un dump."
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"requestdump": "Frot en Dump vun der Datebank",
+	"dumpsondemand-request-dump-button-label": "En neien Dump ufroen",
+	"dumpsondemand-dump-already-requested": "En Dump gouf schonn ugefrot"
+}

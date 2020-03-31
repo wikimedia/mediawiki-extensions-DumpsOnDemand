@@ -1,10 +1,32 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wladek92"
+			"Wladek92",
+			"Gomoko",
+			"Thibaut120094"
 		]
 	},
+	"dumpsondemand-desc": "Permet aux utilisateurs privilégiés de demander des dumps de base de données",
+	"requestdump": "Demander un dump de base de données",
+	"requestdump-text": "Les dumps de base de données peuvent être utilisés comme sauvegarde personnelle ou pour des robots de maintenance. Toutes les requêtes sont tracées dans le [[Special:Log/dumprequest|journal des demandes de dump de base de données]].",
+	"dumpsondemand-current-revisions": "Toutes les pages avec seulement les révisions actuelles",
 	"dumpsondemand-current-revisions-help": "Cette version est la plus adaptée à une utilisation par robot.",
 	"dumpsondemand-all-revisions": "Toutes les pages avec leur historique",
-	"logentry-dumprequest": "{{GENDER:$2|a demandé}} le vidage de la base de données"
+	"dumpsondemand-all-revisions-help": "Cette version est la plus appropriée pour les sauvegardes. Attention : Ce fichier peut être très gros !",
+	"dumpsondemand-request-dump-button-label": "Demander un nouveau dump",
+	"dumpsondemand-dump-already-requested": "Un dump a déjà été demandé",
+	"dumpsondemand-dump-unavailable": "Ce dump n’a pas encore été créé",
+	"log-name-dumprequest": "Journal de demande de dump de base de données",
+	"log-description-dumprequest": "Ces événements tracent quand un dump de base de données est demandé.",
+	"logentry-dumprequest": "{{GENDER:$2|a demandé}} le vidage de la base de données",
+	"right-dumpsondemand": "Demander des dumps de base de données sur demande",
+	"action-dumpsondemand": "demander les dumps de base de donnés sur demande",
+	"right-dumprequestlog": "Afficher le journal de demande de dump de base de données",
+	"action-dumprequestlog": "afficher le journal de demande de dump de base de données",
+	"right-dumpsondemand-limit-exempt": "Ignorer la limite de temps pour la demande de dump de base de données",
+	"action-dumpsondemand-limit-exempt": "ignorer la limite de temps pour la demande de dump de base de données",
+	"dumpsondemand-dump-requested": "Un dump a été demandé.",
+	"dumpsondemand-filetype-gz": "Les dumps seront fournis sous forme de fichier XML compressé en gzip.",
+	"dumpsondemand-filetype-bz2": "Les dumps seront fournis sous forme de fichier XML compressé en bzip2.",
+	"dumpsondemand-filetype-zip": "Les dumps seront fournis sous forme de fichier ZIP."
 }

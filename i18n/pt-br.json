@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira"
+		]
+	},
+	"dumpsondemand-desc": "Permite que usuários privilegiados solicitem despejos de banco de dados",
+	"requestdump": "Solicitar um despejo de banco de dados",
+	"dumpsondemand-current-revisions": "Todas as páginas com apenas as revisões atuais",
+	"dumpsondemand-current-revisions-help": "Esta versão é a mais adequada para uso no robô.",
+	"dumpsondemand-all-revisions": "Todas as páginas com seu histórico",
+	"dumpsondemand-all-revisions-help": "Esta versão é a mais adequada para cópia de recuperação. Aviso: Este arquivo pode ser muito grande!",
+	"dumpsondemand-request-dump-button-label": "Solicitar um novo despejo",
+	"dumpsondemand-dump-already-requested": "Um despejo já foi solicitado",
+	"logentry-dumprequest": "{{GENDER:$2|solicitado}} um despejo de banco de dados",
+	"right-dumpsondemand": "Solicitar despejos de banco de dados sob demanda",
+	"action-dumpsondemand-limit-exempt": "ignore o limite de tempo para solicitar despejos do banco de dados",
+	"dumpsondemand-dump-requested": "Um despejo foi solicitado.",
+	"dumpsondemand-filetype-bz2": "Os despejos serão fornecidos como um arquivo XML compactado bzip2.",
+	"dumpsondemand-filetype-zip": "Os despejos serão fornecidos em um arquivo ZIP."
+}
