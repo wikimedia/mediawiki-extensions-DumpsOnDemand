@@ -4,8 +4,12 @@
 			"Fulup"
 		]
 	},
+	"dumpsondemand-desc": "Aotren a ra an implijerien ispisial da c'houlenn dumpoù eus an diaz roadennoù",
 	"requestdump": "Goulenn un dump eus an diaz roadennoù",
+	"requestdump-text": "Gallout a ra dumpoù an diazoù roadennoù bezañ implijet evel savete personel pe evit robotoù trezalc'h. Heuliet eo an holl rekedoù e [[Special:Log/dumprequest|marilh goulennoù dumpoù an diazoù roadennoù]].",
+	"dumpsondemand-current-revisions": "An holl bajennoù gant ar stummoù red hepken",
 	"dumpsondemand-current-revisions-help": "Azasoc'h eo ar stumm-mañ evit bezañ implijet gant robotoù.",
+	"dumpsondemand-all-revisions-help": "Hemañ eo ar stumm gwellañ evit ar savete. Diwallit : Bras-tre e c'hall bezañ ar restr-mañ !",
 	"logentry-dumprequest": "{{GENDER:$2|en deus goulennet|he deus goulennet}} un dump eus an diaz roadennoù",
 	"dumpsondemand-dump-requested": "Goulennet ez bet un dump."
 }

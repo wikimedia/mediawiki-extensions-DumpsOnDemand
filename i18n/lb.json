@@ -5,6 +5,7 @@
 		]
 	},
 	"requestdump": "Frot en Dump vun der Datebank",
+	"dumpsondemand-current-revisions": "All Säite mat nëmmen der aktueller Versioun",
 	"dumpsondemand-request-dump-button-label": "En neien Dump ufroen",
 	"dumpsondemand-dump-already-requested": "En Dump gouf schonn ugefrot"
 }
