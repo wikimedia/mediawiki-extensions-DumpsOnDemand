@@ -9,7 +9,22 @@
 	"requestdump-text": "Gallout a ra dumpoù an diazoù roadennoù bezañ implijet evel savete personel pe evit robotoù trezalc'h. Heuliet eo an holl rekedoù e [[Special:Log/dumprequest|marilh goulennoù dumpoù an diazoù roadennoù]].",
 	"dumpsondemand-current-revisions": "An holl bajennoù gant ar stummoù red hepken",
 	"dumpsondemand-current-revisions-help": "Azasoc'h eo ar stumm-mañ evit bezañ implijet gant robotoù.",
+	"dumpsondemand-all-revisions": "An holl bajennoù gant o istor",
 	"dumpsondemand-all-revisions-help": "Hemañ eo ar stumm gwellañ evit ar savete. Diwallit : Bras-tre e c'hall bezañ ar restr-mañ !",
+	"dumpsondemand-request-dump-button-label": "Goulenn un dump nevez",
+	"dumpsondemand-dump-already-requested": "Goulennet ez eus bet kaout un dump c'hoazh",
+	"dumpsondemand-dump-unavailable": "N'eo ket bet krouet an dump c'hoazh",
+	"log-name-dumprequest": "Marilh goulennoù dumpoù an diazoù roadennoù",
+	"log-description-dumprequest": "Heuliañ a ra an darvoudoù-mañ ar goulennoù dumpoù evit an diazoù roadennoù.",
 	"logentry-dumprequest": "{{GENDER:$2|en deus goulennet|he deus goulennet}} un dump eus an diaz roadennoù",
-	"dumpsondemand-dump-requested": "Goulennet ez bet un dump."
+	"right-dumpsondemand": "Goulenn dumpoù diaz roadennoù diwar c'houlenn",
+	"action-dumpsondemand": "Goulenn dumpoù diaz roadennoù diwar c'houlenn",
+	"right-dumprequestlog": "Gwelet marilh ar goulennoù dumpoù evit an diazoù roadennoù",
+	"action-dumprequestlog": "gwelet marilh ar goulennoù dumpoù evit an diaz roadennoù",
+	"right-dumpsondemand-limit-exempt": "Na ober van ouzh ar vevenn amzer evit goulenn dumpoù diazoù roadennoù",
+	"action-dumpsondemand-limit-exempt": "Na ober van ouzh ar vevenn amzer evit goulenn dumpoù diazoù roadennoù",
+	"dumpsondemand-dump-requested": "Goulennet ez bet un dump.",
+	"dumpsondemand-filetype-gz": "Pourchaset e vo an dumpoù e furmad restroù XML gwasket e gzip.",
+	"dumpsondemand-filetype-bz2": "Pourchaset e vo an dumpoù e furmad restroù XML gwasket e bzip2.",
+	"dumpsondemand-filetype-zip": "Pourchaset e vo an dumpoù er furmad ZIP"
 }

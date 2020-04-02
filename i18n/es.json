@@ -4,10 +4,16 @@
 			"Fitoschido"
 		]
 	},
+	"dumpsondemand-desc": "Permite a usuarios privilegiados solicitar volcados de la base de datos",
 	"requestdump": "Solicitar volcado de base de datos",
+	"requestdump-text": "Pueden utilizarse los volcados de la base de datos como copia de respaldo personal o para robots de mantenimiento. Todas las solicitudes se añaden al [[Special:Log/dumprequest|registro de solicitudes de volcado de base de datos]].",
+	"dumpsondemand-request-dump-button-label": "Solicitar un volcado nuevo",
 	"dumpsondemand-dump-already-requested": "Ya se ha solicitado un volcado",
 	"dumpsondemand-dump-unavailable": "Todavía no se ha creado este volcado",
 	"log-name-dumprequest": "Registro de solicitudes de volcado de base de datos",
+	"log-description-dumprequest": "Estos sucesos dan seguimiento de las solicitudes de volcado de base de datos.",
 	"dumpsondemand-dump-requested": "Se ha solicitado un volcado.",
-	"dumpsondemand-filetype-bz2": "Los volcados se proporcionarán como un archivo XML comprimido con bzip2."
+	"dumpsondemand-filetype-gz": "Los volcados se proporcionarán como un archivo XML comprimido con gzip.",
+	"dumpsondemand-filetype-bz2": "Los volcados se proporcionarán como un archivo XML comprimido con bzip2.",
+	"dumpsondemand-filetype-zip": "Los volcados se proporcionarán como un archivo ZIP."
 }
