@@ -6,6 +6,7 @@
 	},
 	"requestdump": "Frot en Dump vun der Datebank",
 	"dumpsondemand-current-revisions": "All Säite mat nëmmen der aktueller Versioun",
+	"dumpsondemand-current-revisions-help": "Dës Versioun ass déi bescht fir vun engem Bot benotzt ze ginn.",
 	"dumpsondemand-all-revisions": "All Säite mat hire Versiounen",
 	"dumpsondemand-request-dump-button-label": "En neien Dump ufroen",
 	"dumpsondemand-dump-already-requested": "En Dump gouf schonn ugefrot",
