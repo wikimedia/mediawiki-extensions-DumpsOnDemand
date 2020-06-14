@@ -122,7 +122,7 @@ class SpecialRequestDump extends FormSpecialPage {
 
 	/**
 	 * Get button config for the given timestamp.
-	 * This will set the button label, and disable the button when no dump is avaiable.
+	 * This will set the button label, and disable the button when no dump is available.
 	 *
 	 * @param int|false $unixTimestamp Unix timestamp of the dump, or false when no dump exists
 	 * @return array
@@ -157,9 +157,9 @@ class SpecialRequestDump extends FormSpecialPage {
 		$user = $this->getUser();
 
 		// The submit button is hidden, but any ordinary post request to the special page will
-		// still allow anyone request a new dump. Check the permissions in the submit handler to
-		// prevent unauthorized dump requests.
-		if ( !$this->permissionManager->userHasRight( $user, 'dumpsondemand' ) ) {
+		// still allow anyone request a new dump. Check that the user can request the dump in the
+		// submit handler to prevent unauthorized dump requests.
+		if ( !$this->userCanRequestDump() ) {
 			// Returning false will just show the user the form again without an error message.
 			// An error message is not necessary, as regular users won't encounter this scenario.
 			return false;
