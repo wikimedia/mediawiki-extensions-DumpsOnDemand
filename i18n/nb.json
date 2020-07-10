@@ -20,5 +20,11 @@
 	"right-dumpsondemand": "Be om databasekopier ved behov",
 	"action-dumpsondemand": "be om databasekopier ved behov",
 	"right-dumprequestlog": "Vise loggen for forespørsler etter databasekopier",
-	"action-dumprequestlog": "vise loggen for forespørsler etter databasekopier"
+	"action-dumprequestlog": "vise loggen for forespørsler etter databasekopier",
+	"right-dumpsondemand-limit-exempt": "Ignorer tidsbegrensningen for å be om databasedumper",
+	"action-dumpsondemand-limit-exempt": "ignorere tidsbegrensningen for å be om databasedumper",
+	"dumpsondemand-dump-requested": "Det har blitt bedt om en dump.",
+	"dumpsondemand-filetype-gz": "Dumpene blir tilbudt som en gzip-komprimert XML-fil.",
+	"dumpsondemand-filetype-bz2": "Dumpene blir tilbudt som en bzip2-komprimert XML-fil.",
+	"dumpsondemand-filetype-zip": "Dumpene blir tilbudt i en ZIP-fil."
 }
