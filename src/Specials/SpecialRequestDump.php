@@ -35,20 +35,19 @@ class SpecialRequestDump extends FormSpecialPage {
 	/**
 	 * @param FileBackend $fileBackend
 	 * @param ConfigFactory $configFactory
-	 * @param JobQueueGroup|null $jobQueueGroup JobQueueGroup service. Optional until it is
-	 * provided as a service
+	 * @param JobQueueGroup $jobQueueGroup
 	 */
 	public function __construct(
 		FileBackend $fileBackend,
 		ConfigFactory $configFactory,
-		JobQueueGroup $jobQueueGroup = null
+		JobQueueGroup $jobQueueGroup
 	) {
 		parent::__construct( 'RequestDump' );
 
 		$this->fileBackend = $fileBackend;
 		$this->requestLimit = $configFactory->makeConfig( 'DumpsOnDemand' )
 			->get( 'DumpsOnDemandRequestLimit' );
-		$this->jobQueueGroup = $jobQueueGroup ?? JobQueueGroup::singleton();
+		$this->jobQueueGroup = $jobQueueGroup;
 	}
 
 	/**
