@@ -19,7 +19,6 @@
 		"RequestDump": {
 			"class": "MediaWiki\\Extensions\\DumpsOnDemand\\Specials\\SpecialRequestDump",
 			"services": [
-				"PermissionManager",
 				"DumpsOnDemandFileBackend",
 				"ConfigFactory"
 			]

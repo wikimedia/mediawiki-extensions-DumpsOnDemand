@@ -11,15 +11,9 @@ use ManualLogEntry;
 use MediaWiki\Extensions\DumpsOnDemand\Backend\FileBackend;
 use MediaWiki\Extensions\DumpsOnDemand\HTMLForm\Fields\HTMLHrefButtonField;
 use MediaWiki\Extensions\DumpsOnDemand\Jobs\DoDatabaseDumpJob;
-use MediaWiki\Permissions\PermissionManager;
 use function time;
 
 class SpecialRequestDump extends FormSpecialPage {
-	/**
-	 * @var PermissionManager
-	 */
-	private $permissionManager;
-
 	/**
 	 * @var JobQueueGroup
 	 */
@@ -39,21 +33,18 @@ class SpecialRequestDump extends FormSpecialPage {
 	private $requestLimit;
 
 	/**
-	 * @param PermissionManager $permissionManager
 	 * @param FileBackend $fileBackend
 	 * @param ConfigFactory $configFactory
 	 * @param JobQueueGroup|null $jobQueueGroup JobQueueGroup service. Optional until it is
 	 * provided as a service
 	 */
 	public function __construct(
-		PermissionManager $permissionManager,
 		FileBackend $fileBackend,
 		ConfigFactory $configFactory,
 		JobQueueGroup $jobQueueGroup = null
 	) {
 		parent::__construct( 'RequestDump' );
 
-		$this->permissionManager = $permissionManager;
 		$this->fileBackend = $fileBackend;
 		$this->requestLimit = $configFactory->makeConfig( 'DumpsOnDemand' )
 			->get( 'DumpsOnDemandRequestLimit' );
@@ -108,12 +99,10 @@ class SpecialRequestDump extends FormSpecialPage {
 			]
 		];
 
-		if ( !$this->userCanRequestDump() ) {
-			$fields['request-dump']['buttonlabel-message'] = 'dumpsondemand-dump-already-requested';
+		if ( !$this->getAuthority()->isAllowed( 'dumpsondemand' ) ) {
 			$fields['request-dump']['disabled'] = true;
-		}
-
-		if ( !$this->permissionManager->userHasRight( $this->getUser(), 'dumpsondemand' ) ) {
+		} elseif ( !$this->userCanRequestDump() ) {
+			$fields['request-dump']['buttonlabel-message'] = 'dumpsondemand-dump-already-requested';
 			$fields['request-dump']['disabled'] = true;
 		}
 
@@ -154,8 +143,6 @@ class SpecialRequestDump extends FormSpecialPage {
 	 * @return bool
 	 */
 	public function onSubmit( array $data ) : bool {
-		$user = $this->getUser();
-
 		// The submit button is hidden, but any ordinary post request to the special page will
 		// still allow anyone request a new dump. Check that the user can request the dump in the
 		// submit handler to prevent unauthorized dump requests.
@@ -166,7 +153,7 @@ class SpecialRequestDump extends FormSpecialPage {
 		}
 
 		$logEntry = new ManualLogEntry( 'dumprequest', 'dumprequest' );
-		$logEntry->setPerformer( $user );
+		$logEntry->setPerformer( $this->getUser() );
 		$logEntry->setTarget( $this->getPageTitle() );
 		$logid = $logEntry->insert();
 		$logEntry->publish( $logid );
@@ -219,11 +206,9 @@ class SpecialRequestDump extends FormSpecialPage {
 	 * @return bool
 	 */
 	private function userCanRequestDump() : bool {
-		if ( $this->permissionManager->userHasAllRights(
-			$this->getUser(),
-			'dumpsondemand',
-			'dumpsondemand-limit-exempt'
-		) ) {
+		if ( !$this->getAuthority()->isAllowed( 'dumpsondemand' ) ) {
+			return false;
+		} elseif ( $this->getAuthority()->isAllowed( 'dumpsondemand-limit-exempt' ) ) {
 			return true;
 		}
 
