@@ -56,7 +56,7 @@ class DoDatabaseDumpJob extends Job implements GenericParameterJob {
 			$file = $this->fileBackend->getCurrentRevisionsFilePath();
 		}
 
-		$exporter = new WikiExporter(
+		$exporter = MediaWikiServices::getInstance()->getWikiExporterFactory()->getWikiExporter(
 			$dbr,
 			$this->params['fullHistory'] ? WikiExporter::FULL : WikiExporter::CURRENT
 		);
