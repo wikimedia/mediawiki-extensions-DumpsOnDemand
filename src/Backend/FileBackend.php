@@ -34,7 +34,7 @@ abstract class FileBackend {
 	 *
 	 * @return string
 	 */
-	abstract public function getAllRevisionsFileUrl() : string;
+	abstract public function getAllRevisionsFileUrl(): string;
 
 	/**
 	 * Returns the writable file path of the dump with all revisions, to be passed to the output
@@ -42,7 +42,7 @@ abstract class FileBackend {
 	 *
 	 * @return string
 	 */
-	abstract public function getAllRevisionsFilePath() : string;
+	abstract public function getAllRevisionsFilePath(): string;
 
 	/**
 	 * Returns the timestamp of the dump with the current revisions.
@@ -56,7 +56,7 @@ abstract class FileBackend {
 	 *
 	 * @return string
 	 */
-	abstract public function getCurrentRevisionsFileUrl() : string;
+	abstract public function getCurrentRevisionsFileUrl(): string;
 
 	/**
 	 * Returns the writable file path of the dump with the current revisions, to be passed to the
@@ -64,7 +64,7 @@ abstract class FileBackend {
 	 *
 	 * @return string
 	 */
-	abstract public function getCurrentRevisionsFilePath() : string;
+	abstract public function getCurrentRevisionsFilePath(): string;
 
 	/**
 	 * Creates an output sink for the given file.
@@ -72,7 +72,7 @@ abstract class FileBackend {
 	 * @param string $file
 	 * @return DumpOutput
 	 */
-	public function getOutputSink( string $file ) : DumpOutput {
+	public function getOutputSink( string $file ): DumpOutput {
 		return $this->outputSinkFactory->makeNewSinkForFile( $file );
 	}
 
@@ -83,7 +83,7 @@ abstract class FileBackend {
 	 *
 	 * @return string
 	 */
-	public function getFileTypeDescriptionMessage() : string {
+	public function getFileTypeDescriptionMessage(): string {
 		$extension = $this->outputSinkFactory->getExtension();
 
 		if ( $extension === '' ) {

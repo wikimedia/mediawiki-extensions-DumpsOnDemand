@@ -34,7 +34,7 @@ class DumpZipFileOutput extends DumpFileOutput {
 	 * @inheritDoc
 	 * @param string $string
 	 */
-	public function writeCloseStream( $string ) : void {
+	public function writeCloseStream( $string ): void {
 		parent::writeCloseStream( $string );
 		$this->archive->addFile( $this->filename );
 		$this->archive->close();
@@ -47,7 +47,7 @@ class DumpZipFileOutput extends DumpFileOutput {
 	 * @param bool $open
 	 * @throws MWException
 	 */
-	public function closeAndRename( $newname, $open = false ) : void {
+	public function closeAndRename( $newname, $open = false ): void {
 		parent::closeAndRename( $newname, $open );
 
 		$newname = $this->checkRenameArgCount( $newname );

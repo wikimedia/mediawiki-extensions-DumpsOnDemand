@@ -12,7 +12,7 @@ class OutputSinkFactoryTest extends MediaWikiUnitTestCase {
 	 * @covers \MediaWiki\Extensions\DumpsOnDemand\Export\OutputSinkFactory::__construct
 	 * @covers \MediaWiki\Extensions\DumpsOnDemand\Export\OutputSinkFactory::getExtension
 	 */
-	public function testGetExtension() : void {
+	public function testGetExtension(): void {
 		$factory = new OutputSinkFactory( null, 'zip' );
 
 		static::assertSame( 'zip', $factory->getExtension() );
@@ -22,7 +22,7 @@ class OutputSinkFactoryTest extends MediaWikiUnitTestCase {
 	 * @covers \MediaWiki\Extensions\DumpsOnDemand\Export\OutputSinkFactory::__construct
 	 * @covers \MediaWiki\Extensions\DumpsOnDemand\Export\OutputSinkFactory::makeNewSinkForFile
 	 */
-	public function testMakeNewSinkForFile() : void {
+	public function testMakeNewSinkForFile(): void {
 		// Create a mock sink that doesn't call the parent constructor to prevent calls to the
 		// file system.
 		$mockSink = new class( 'DUMMY VALUE PLEASE IGNORE' ) extends DumpFileOutput {

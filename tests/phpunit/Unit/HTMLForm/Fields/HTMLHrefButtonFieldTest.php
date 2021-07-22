@@ -18,7 +18,7 @@ class HTMLHrefButtonFieldTest extends MediaWikiUnitTestCase {
 	/**
 	 * Tests that the href attribute is passed through correctly.
 	 */
-	public function testHrefAttribute() : void {
+	public function testHrefAttribute(): void {
 		$field = new HTMLHrefButtonField( [
 			'fieldname' => 'test',
 			'buttonlabel' => 'test',
@@ -33,7 +33,7 @@ class HTMLHrefButtonFieldTest extends MediaWikiUnitTestCase {
 	/**
 	 * Tests that the target attribute is passed through correctly.
 	 */
-	public function testTargetAttribute() : void {
+	public function testTargetAttribute(): void {
 		$target = '_blank';
 
 		$field = new HTMLHrefButtonField( [
@@ -51,7 +51,7 @@ class HTMLHrefButtonFieldTest extends MediaWikiUnitTestCase {
 	/**
 	 * Test that the icon attribute results in the button sporting the correct icon.
 	 */
-	public function testIcon() : void {
+	public function testIcon(): void {
 		$icon = 'notice';
 
 		$field = new HTMLHrefButtonField( [
@@ -69,7 +69,7 @@ class HTMLHrefButtonFieldTest extends MediaWikiUnitTestCase {
 	/**
 	 * Test that creating a button without a label is not possible.
 	 */
-	public function testButtonWithoutLabelOrIcon() : void {
+	public function testButtonWithoutLabelOrIcon(): void {
 		$this->expectException( InvalidArgumentException::class );
 		$this->expectExceptionMessage(
 			'Any of buttonlabel, buttonlabel-message or buttonlabel-raw must be set.'
@@ -84,7 +84,7 @@ class HTMLHrefButtonFieldTest extends MediaWikiUnitTestCase {
 	/**
 	 * Test that providing a value for the rel attribute sets it on the button.
 	 */
-	public function testSetNoopener() : void {
+	public function testSetNoopener(): void {
 		$field = new HTMLHrefButtonField( [
 			'fieldname' => 'test',
 			'buttonlabel' => 'test',
@@ -103,7 +103,7 @@ class HTMLHrefButtonFieldTest extends MediaWikiUnitTestCase {
 	/**
 	 * Test that providing a value for the rel attribute as an array sets it on the button.
 	 */
-	public function testSetNoopenerNoFollow() : void {
+	public function testSetNoopenerNoFollow(): void {
 		$field = new HTMLHrefButtonField( [
 			'fieldname' => 'test',
 			'buttonlabel' => 'test',

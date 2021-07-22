@@ -82,7 +82,7 @@ class HTMLHrefButtonField extends HTMLButtonField {
 	 * @return ButtonWidget
 	 * @suppress PhanParamSignatureMismatch
 	 */
-	public function getInputOOUI( $value ) : ButtonWidget {
+	public function getInputOOUI( $value ): ButtonWidget {
 		$config = [
 				'name' => $this->mName,
 				'value' => $this->getDefault(),

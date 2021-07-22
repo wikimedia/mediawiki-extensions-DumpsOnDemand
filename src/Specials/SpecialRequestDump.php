@@ -54,7 +54,7 @@ class SpecialRequestDump extends FormSpecialPage {
 	 * @inheritDoc
 	 * @param HTMLForm $form
 	 */
-	protected function alterForm( HTMLForm $form ) : void {
+	protected function alterForm( HTMLForm $form ): void {
 		$out = $this->getOutput();
 		$out->addHelpLink( 'Help:Extension:DumpsOnDemand' );
 		$out->addModuleStyles( 'oojs-ui.styles.icons-content' );
@@ -72,7 +72,7 @@ class SpecialRequestDump extends FormSpecialPage {
 	 * @inheritDoc
 	 * @return array
 	 */
-	protected function getFormFields() : array {
+	protected function getFormFields(): array {
 		$fields = [
 			'current-revisions' => [
 				'class' => HTMLHrefButtonField::class,
@@ -115,7 +115,7 @@ class SpecialRequestDump extends FormSpecialPage {
 	 * @param int|false $unixTimestamp Unix timestamp of the dump, or false when no dump exists
 	 * @return array
 	 */
-	private function getFormattedDate( $unixTimestamp ) : array {
+	private function getFormattedDate( $unixTimestamp ): array {
 		if ( $unixTimestamp === false ) {
 			return [
 				'buttonlabel-message' => 'dumpsondemand-dump-unavailable',
@@ -141,7 +141,7 @@ class SpecialRequestDump extends FormSpecialPage {
 	 * @param array $data
 	 * @return bool
 	 */
-	public function onSubmit( array $data ) : bool {
+	public function onSubmit( array $data ): bool {
 		// The submit button is hidden, but any ordinary post request to the special page will
 		// still allow anyone request a new dump. Check that the user can request the dump in the
 		// submit handler to prevent unauthorized dump requests.
@@ -177,7 +177,7 @@ class SpecialRequestDump extends FormSpecialPage {
 	 * @inheritDoc
 	 * @return string
 	 */
-	public function getGroupName() : string {
+	public function getGroupName(): string {
 		return 'wiki';
 	}
 
@@ -185,14 +185,14 @@ class SpecialRequestDump extends FormSpecialPage {
 	 * @inheritDoc
 	 * @return string
 	 */
-	public function getDisplayFormat() : string {
+	public function getDisplayFormat(): string {
 		return 'ooui';
 	}
 
 	/**
 	 * @inheritDoc
 	 */
-	public function onSuccess() : void {
+	public function onSuccess(): void {
 		$out = $this->getOutput();
 		$out->addWikiMsg( 'dumpsondemand-dump-requested' );
 
@@ -204,7 +204,7 @@ class SpecialRequestDump extends FormSpecialPage {
 	 *
 	 * @return bool
 	 */
-	private function userCanRequestDump() : bool {
+	private function userCanRequestDump(): bool {
 		if ( !$this->getAuthority()->isAllowed( 'dumpsondemand' ) ) {
 			return false;
 		} elseif ( $this->getAuthority()->isAllowed( 'dumpsondemand-limit-exempt' ) ) {

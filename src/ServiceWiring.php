@@ -7,7 +7,7 @@ use MediaWiki\Extensions\DumpsOnDemand\Export\OutputSinkFactory;
 use MediaWiki\MediaWikiServices;
 
 return [
-	'DumpsOnDemandFileBackend' => static function ( MediaWikiServices $services ) : FileBackend {
+	'DumpsOnDemandFileBackend' => static function ( MediaWikiServices $services ): FileBackend {
 		$config = $services->getConfigFactory()->makeConfig( 'DumpsOnDemand' );
 
 		return $services->getObjectFactory()->createObject(

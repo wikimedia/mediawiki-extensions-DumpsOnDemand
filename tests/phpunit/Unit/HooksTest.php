@@ -17,7 +17,7 @@ class HooksTest extends MediaWikiUnitTestCase {
 	 * @param array $expected
 	 * @param bool $useDefaultQueue
 	 */
-	public function testOnRegistration( array $expected, bool $useDefaultQueue ) : void {
+	public function testOnRegistration( array $expected, bool $useDefaultQueue ): void {
 		global $wgJobTypesExcludedFromDefaultQueue, $wgDumpsOnDemandUseDefaultJobQueue;
 
 		$wgJobTypesExcludedFromDefaultQueue = [];
@@ -36,7 +36,7 @@ class HooksTest extends MediaWikiUnitTestCase {
 	 *
 	 * @return array
 	 */
-	public function provideForOnRegistration() : array {
+	public function provideForOnRegistration(): array {
 		return [
 			[ [], true ],
 			[ [ DoDatabaseDumpJob::JOB_NAME ], false ]
