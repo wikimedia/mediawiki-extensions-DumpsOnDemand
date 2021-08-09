@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Piramidion"
 		]
 	},
 	"dumpsondemand-desc": "Дозволяє привілейованим користувачам подавати запити на дампи бази даних",
+	"dumpsondemand-extensionname": "DumpsOnDemand",
 	"requestdump": "Подати запит на дамп бази даних",
 	"requestdump-text": "Дампи бази даних можна використовувати як персональну резервну копію, або для ботів, що займаються технічним обслуговуванням. Усі запити потрапляють у [[Special:Log/dumprequest|журнал запитів на дамп бази даних]].",
 	"dumpsondemand-current-revisions": "Усі сторінки із лише поточними версіями",
