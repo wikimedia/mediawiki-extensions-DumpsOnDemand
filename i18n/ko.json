@@ -4,12 +4,27 @@
 			"Ykhwong"
 		]
 	},
+	"dumpsondemand-desc": "권한이 있는 사용자가 데이터베이스 덤프를 요청할 수 있게 합니다",
 	"requestdump": "데이터베이스 덤프 요청",
+	"requestdump-text": "데이터베이스 덤프는 개인 백업용 또는 유지보수 봇용으로 사용될 수 있습니다. 모든 요청은 [[Special:Log/dumprequest|데이터베이스 덤프 요청 기록]]에 기록됩니다.",
+	"dumpsondemand-current-revisions": "현재 판만을 가진 모든 문서",
+	"dumpsondemand-current-revisions-help": "이 판이 봇 용도에 가장 적절합니다.",
 	"dumpsondemand-all-revisions": "역사가 있는 모든 문서",
+	"dumpsondemand-all-revisions-help": "이 판은 백업용으로 가장 적절합니다. 경고: 이 파일은 매우 클 수 있습니다!",
 	"dumpsondemand-request-dump-button-label": "새 덤프 요청",
 	"dumpsondemand-dump-already-requested": "덤프가 이미 요청되었습니다",
 	"dumpsondemand-dump-unavailable": "이 덤프는 아직 만들어지지 않았습니다",
 	"log-name-dumprequest": "데이터베이스 덤프 요청 기록",
+	"log-description-dumprequest": "데이터베이스 덤프가 요청될 때 이 이벤트를 추적합니다.",
+	"logentry-dumprequest": "데이터베이스 덤프를 {{GENDER:$2|요청했습니다}}",
+	"right-dumpsondemand": "요청 시 데이터베이스 덤프를 요청합니다",
+	"action-dumpsondemand": "요청 시 데이터베이스 덤프를 요청할",
+	"right-dumprequestlog": "데이터베이스 덤프 요청 기록을 봅니다",
+	"action-dumprequestlog": "데이터베이스 덤프 요청 기록을 볼",
+	"right-dumpsondemand-limit-exempt": "데이터베이스 덤프 요청의 시간 제한을 무시합니다",
+	"action-dumpsondemand-limit-exempt": "데이터베이스 덤프 요청의 시간 제한을 무시할",
 	"dumpsondemand-dump-requested": "덤프가 요청되었습니다.",
+	"dumpsondemand-filetype-gz": "덤프는 gzip으로 압축된 XML 파일로 제공됩니다.",
+	"dumpsondemand-filetype-bz2": "덤프는 bzip2로 압축된 XML 파일로 제공됩니다.",
 	"dumpsondemand-filetype-zip": "덤프는 ZIP 파일로 제공됩니다."
 }
