@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"dumpsondemand-desc": "Permitte a usatores privilegiate requestar discargas del base de datos.",
+	"requestdump": "Requestar un discarga del base de datos",
+	"requestdump-text": "Discargas del base de datos pote esser usate como copia de reserva personal o pro robots de mantenentia. Tote le requestas se tracia in le [[Special:Log/dumprequest|registro de requestas de discarga del base de datos]].",
+	"dumpsondemand-current-revisions": "Tote le paginas con solmente le versiones actual",
+	"dumpsondemand-current-revisions-help": "Iste version es le plus apte pro uso per robots.",
+	"dumpsondemand-all-revisions": "Tote le paginas con lor historias",
+	"dumpsondemand-all-revisions-help": "Iste version es le plus apte pro copias de reserva. Attention: Iste file pote esser multo grande!",
+	"dumpsondemand-request-dump-button-label": "Requestar un nove discarga",
+	"dumpsondemand-dump-already-requested": "Un discarga ha jam essite requestate",
+	"dumpsondemand-dump-unavailable": "Iste discarga non ha ancora essite create",
+	"log-name-dumprequest": "Registro de requestas de discarga del base de datos",
+	"log-description-dumprequest": "Iste eventos tracia quando un discarga del base de datos es requestate.",
+	"logentry-dumprequest": "{{GENDER:$2|ha requestate}} un discarga del base de datos",
+	"right-dumpsondemand": "Requestar discargas del base de datos sur demanda",
+	"action-dumpsondemand": "requestar discargas del base de datos sur demanda",
+	"right-dumprequestlog": "Vider le registro de requestas de discarga del base de datos",
+	"action-dumprequestlog": "vider le registro de requestas de discarga del base de datos",
+	"right-dumpsondemand-limit-exempt": "Ignorar le limite de tempore pro requestar discargas del base de datos",
+	"action-dumpsondemand-limit-exempt": "ignorar le limite de tempore pro requestar discargas del base de datos",
+	"dumpsondemand-dump-requested": "Un discarga ha essite requestate.",
+	"dumpsondemand-filetype-gz": "Le discargas essera fornite como file XML comprimite con gzip.",
+	"dumpsondemand-filetype-bz2": "Le discargas essera fornite como file XML comprimite con bzip2.",
+	"dumpsondemand-filetype-zip": "Le discargas essera fornite in un file ZIP."
+}

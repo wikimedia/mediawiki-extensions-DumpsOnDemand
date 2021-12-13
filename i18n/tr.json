@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"MuratTheTurkish"
 		]
 	},
 	"dumpsondemand-desc": "Ayrıcalıklı kullanıcıların veritabanı dökümlerini istemesine izin verir",
 	"requestdump": "Veritabanı dökümü iste",
 	"requestdump-text": "Veritabanı dökümleri kişisel yedekleme veya bakım botları için kullanılabilir. Tüm istekler [[Special:Log/dumprequest|veritabanı dökümü istek günlüğü]] içine kaydedilir.",
-	"dumpsondemand-current-revisions": "Yalnızca güncel düzeltmeleri olan tüm sayfalar",
+	"dumpsondemand-current-revisions": "Yalnızca güncel revizyonları olan tüm sayfalar",
 	"dumpsondemand-current-revisions-help": "Bu sürüm bot kullanımı için en uygun olanıdır.",
 	"dumpsondemand-all-revisions": "Geçmişi olan tüm sayfalar",
 	"dumpsondemand-all-revisions-help": "Bu sürümler yedeklemeler için en uygun olanıdır. Uyarı: Bu dosya çok büyük olabilir!",

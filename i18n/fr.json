@@ -3,10 +3,12 @@
 		"authors": [
 			"Gomoko",
 			"Thibaut120094",
-			"Wladek92"
+			"Wladek92",
+			"Verdy p"
 		]
 	},
 	"dumpsondemand-desc": "Permet aux utilisateurs privilégiés de demander des dumps de base de données",
+	"dumpsondemand-extensionname": "DumpsOnDemand",
 	"requestdump": "Demander un dump de base de données",
 	"requestdump-text": "Les dumps de base de données peuvent être utilisés comme sauvegarde personnelle ou pour des robots de maintenance. Toutes les requêtes sont tracées dans le [[Special:Log/dumprequest|journal des demandes de dump de base de données]].",
 	"dumpsondemand-current-revisions": "Toutes les pages avec seulement les révisions actuelles",
