@@ -64,7 +64,7 @@ class SpecialRequestDump extends FormSpecialPage {
 		$fileTypeMessage = $this->fileBackend->getFileTypeDescriptionMessage();
 
 		if ( $fileTypeMessage !== '' ) {
-			$form->addHeaderText( $this->msg( $fileTypeMessage )->parseAsBlock() );
+			$form->addHeaderHtml( $this->msg( $fileTypeMessage )->parseAsBlock() );
 		}
 	}
 
