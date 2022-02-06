@@ -1,4 +1,5 @@
 {
+	"name": "DumpsOnDemand",
 	"private": true,
 	"scripts": {
 		"test": "npm -s run lint",
@@ -6,7 +7,7 @@
 		"lint:i18n": "banana-checker i18n/"
 	},
 	"devDependencies": {
-		"eslint-config-wikimedia": "0.20.0",
+		"eslint-config-wikimedia": "0.21.0",
 		"grunt-banana-checker": "0.9.0"
 	}
 }
