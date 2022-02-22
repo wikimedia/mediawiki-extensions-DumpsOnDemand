@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"dumpsondemand-desc": "מאפשרת למשתמשים בעלי הרשאות לבקש היטלים (dumps) של מסד הנתונים",
+	"requestdump": "בקשת היטל (dump) של מסד הנתונים",
+	"requestdump-text": "היטלים של מסד נתונים יכולים לשמש לגיבוי אישי או לבוטים של תחזוקה. כל הבקשות נרשמות [[Special:Log/dumprequest|ביומן בקשות היטל מסד נתונים]].",
+	"dumpsondemand-current-revisions": "כל הדפים רק עם הגרסאות הנוכחיות.",
+	"dumpsondemand-current-revisions-help": "הגרסה הזאת מתאימה ביותר לבוט.",
+	"dumpsondemand-all-revisions": "כל הדפים עם הגרסאות הקודמות שלהם",
+	"dumpsondemand-all-revisions-help": "הגרסה הזאת מתאימה ביותר לגיבוי. אזהרה: הקובץ יכול להיות גדול מאוד!",
+	"dumpsondemand-request-dump-button-label": "בקשת היטל חדש",
+	"dumpsondemand-dump-already-requested": "כבר נשלחה בקשת לקבל היטל",
+	"dumpsondemand-dump-unavailable": "ההיטל הזה עוד לא נוצר",
+	"log-name-dumprequest": "יומן בקשות היטל מסד נתונים",
+	"log-description-dumprequest": "האירועים האלה עוקבים אחרי בקשות היטל מסד נתונים.",
+	"logentry-dumprequest": "{{GENDER:$2|ביקש|ביקשה}} היטל מסד נתונים",
+	"right-dumpsondemand": "בקשת היטלי מסד נתונים",
+	"action-dumpsondemand": "לבקש היטלי מסד נתונים",
+	"right-dumprequestlog": "צפייה ביומן בקשות היטל מסד נתונים",
+	"action-dumprequestlog": "לצפות ביומן בקשות היטל מסד נתונים",
+	"right-dumpsondemand-limit-exempt": "התעלמות ממגבלת זמן בקשת היטלי מסד נתונים",
+	"action-dumpsondemand-limit-exempt": "להתעלם ממגבלת זמן בקשת היטלי מסד נתונים",
+	"dumpsondemand-dump-requested": "נשלחה בקשת לקבל היטל.",
+	"dumpsondemand-filetype-gz": "ההיטלים יסופקו בקובץ XML מכווץ ב־gzip.",
+	"dumpsondemand-filetype-bz2": "ההיטלים יסופקו בקובץ XML מכווץ ב־bzip2.",
+	"dumpsondemand-filetype-zip": "ההיטלים יסופקו בקובץ ZIP."
+}
