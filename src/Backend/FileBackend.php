@@ -1,9 +1,9 @@
 <?php
 
-namespace MediaWiki\Extensions\DumpsOnDemand\Backend;
+namespace MediaWiki\Extension\DumpsOnDemand\Backend;
 
 use DumpOutput;
-use MediaWiki\Extensions\DumpsOnDemand\Export\OutputSinkFactory;
+use MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory;
 
 /**
  * Represents a file backend with which DumpsOnDemand can communicate.

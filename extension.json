@@ -13,11 +13,11 @@
 		"MediaWiki": ">=1.38.0"
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extensions\\DumpsOnDemand\\": "src/"
+		"MediaWiki\\Extension\\DumpsOnDemand\\": "src/"
 	},
 	"SpecialPages": {
 		"RequestDump": {
-			"class": "MediaWiki\\Extensions\\DumpsOnDemand\\Specials\\SpecialRequestDump",
+			"class": "MediaWiki\\Extension\\DumpsOnDemand\\Specials\\SpecialRequestDump",
 			"services": [
 				"DumpsOnDemandFileBackend",
 				"ConfigFactory",
@@ -51,7 +51,7 @@
 		},
 		"DumpsOnDemandDumpFileBackend": {
 			"value": {
-				"class": "MediaWiki\\Extensions\\DumpsOnDemand\\Backend\\LocalFileBackend",
+				"class": "MediaWiki\\Extension\\DumpsOnDemand\\Backend\\LocalFileBackend",
 				"services": [
 					"MainConfig"
 				]
@@ -68,7 +68,7 @@
 		"dumprequest": "dumprequestlog"
 	},
 	"JobClasses": {
-		"DatabaseDumpGeneration": "MediaWiki\\Extensions\\DumpsOnDemand\\Jobs\\DoDatabaseDumpJob"
+		"DatabaseDumpGeneration": "MediaWiki\\Extension\\DumpsOnDemand\\Jobs\\DoDatabaseDumpJob"
 	},
 	"AvailableRights": [
 		"dumprequestlog",
@@ -76,5 +76,5 @@
 		"dumpsondemand-limit-exempt"
 	],
 	"manifest_version": 2,
-	"callback": "MediaWiki\\Extensions\\DumpsOnDemand\\Hooks::onRegistration"
+	"callback": "MediaWiki\\Extension\\DumpsOnDemand\\Hooks::onRegistration"
 }

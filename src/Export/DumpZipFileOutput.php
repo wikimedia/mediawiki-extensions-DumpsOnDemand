@@ -1,6 +1,6 @@
 <?php
 
-namespace MediaWiki\Extensions\DumpsOnDemand\Export;
+namespace MediaWiki\Extension\DumpsOnDemand\Export;
 
 use DumpFileOutput;
 use MWException;

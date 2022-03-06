@@ -1,15 +1,15 @@
 <?php
 
-namespace MediaWiki\Extensions\DumpsOnDemand\Tests\Unit\Backend;
+namespace MediaWiki\Extension\DumpsOnDemand\Tests\Unit\Backend;
 
 use HashConfig;
-use MediaWiki\Extensions\DumpsOnDemand\Backend\LocalFileBackend;
-use MediaWiki\Extensions\DumpsOnDemand\Export\OutputSinkFactory;
+use MediaWiki\Extension\DumpsOnDemand\Backend\LocalFileBackend;
+use MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory;
 use MediaWikiUnitTestCase;
 use function explode;
 
 /**
- * @covers \MediaWiki\Extensions\DumpsOnDemand\Backend\LocalFileBackend
+ * @covers \MediaWiki\Extension\DumpsOnDemand\Backend\LocalFileBackend
  */
 class LocalFileBackendTest extends MediaWikiUnitTestCase {
 	private const WIKI_ID = 'unittestdb-unittestschema-unittestprefix';

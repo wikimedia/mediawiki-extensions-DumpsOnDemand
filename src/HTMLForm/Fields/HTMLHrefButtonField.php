@@ -1,6 +1,6 @@
 <?php
 
-namespace MediaWiki\Extensions\DumpsOnDemand\HTMLForm\Fields;
+namespace MediaWiki\Extension\DumpsOnDemand\HTMLForm\Fields;
 
 use HTMLButtonField;
 use InvalidArgumentException;

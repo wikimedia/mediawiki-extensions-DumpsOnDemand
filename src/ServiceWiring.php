@@ -1,9 +1,9 @@
 <?php
 
-namespace MediaWiki\Extensions\DumpsOnDemand;
+namespace MediaWiki\Extension\DumpsOnDemand;
 
-use MediaWiki\Extensions\DumpsOnDemand\Backend\FileBackend;
-use MediaWiki\Extensions\DumpsOnDemand\Export\OutputSinkFactory;
+use MediaWiki\Extension\DumpsOnDemand\Backend\FileBackend;
+use MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory;
 use MediaWiki\MediaWikiServices;
 
 return [

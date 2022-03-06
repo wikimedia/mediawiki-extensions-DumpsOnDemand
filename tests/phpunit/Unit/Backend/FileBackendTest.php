@@ -1,16 +1,16 @@
 <?php
 
-namespace MediaWiki\Extensions\DumpsOnDemand\Tests\Unit\Backend;
+namespace MediaWiki\Extension\DumpsOnDemand\Tests\Unit\Backend;
 
 use DumpFileOutput;
 use HashConfig;
-use MediaWiki\Extensions\DumpsOnDemand\Backend\LocalFileBackend;
-use MediaWiki\Extensions\DumpsOnDemand\Export\OutputSinkFactory;
+use MediaWiki\Extension\DumpsOnDemand\Backend\LocalFileBackend;
+use MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory;
 use MediaWikiUnitTestCase;
 use function get_class;
 
 /**
- * @covers \MediaWiki\Extensions\DumpsOnDemand\Backend\FileBackend
+ * @covers \MediaWiki\Extension\DumpsOnDemand\Backend\FileBackend
  */
 class FileBackendTest extends MediaWikiUnitTestCase {
 	public function testGetOutputSink(): void {
