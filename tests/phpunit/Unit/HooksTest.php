@@ -1,13 +1,13 @@
 <?php
 
-namespace MediaWiki\Extensions\DumpsOnDemand\Tests\Unit;
+namespace MediaWiki\Extension\DumpsOnDemand\Tests\Unit;
 
-use MediaWiki\Extensions\DumpsOnDemand\Hooks;
-use MediaWiki\Extensions\DumpsOnDemand\Jobs\DoDatabaseDumpJob;
+use MediaWiki\Extension\DumpsOnDemand\Hooks;
+use MediaWiki\Extension\DumpsOnDemand\Jobs\DoDatabaseDumpJob;
 use MediaWikiUnitTestCase;
 
 /**
- * @covers \MediaWiki\Extensions\DumpsOnDemand\Hooks::onRegistration
+ * @covers \MediaWiki\Extension\DumpsOnDemand\Hooks::onRegistration
  */
 class HooksTest extends MediaWikiUnitTestCase {
 

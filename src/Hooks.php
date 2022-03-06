@@ -1,8 +1,8 @@
 <?php
 
-namespace MediaWiki\Extensions\DumpsOnDemand;
+namespace MediaWiki\Extension\DumpsOnDemand;
 
-use MediaWiki\Extensions\DumpsOnDemand\Jobs\DoDatabaseDumpJob;
+use MediaWiki\Extension\DumpsOnDemand\Jobs\DoDatabaseDumpJob;
 
 class Hooks {
 	/**

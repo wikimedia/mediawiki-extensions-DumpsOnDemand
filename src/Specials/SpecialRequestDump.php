@@ -1,6 +1,6 @@
 <?php
 
-namespace MediaWiki\Extensions\DumpsOnDemand\Specials;
+namespace MediaWiki\Extension\DumpsOnDemand\Specials;
 
 use ConfigFactory;
 use FormSpecialPage;
@@ -8,9 +8,9 @@ use HTMLForm;
 use JobQueueGroup;
 use JobSpecification;
 use ManualLogEntry;
-use MediaWiki\Extensions\DumpsOnDemand\Backend\FileBackend;
-use MediaWiki\Extensions\DumpsOnDemand\HTMLForm\Fields\HTMLHrefButtonField;
-use MediaWiki\Extensions\DumpsOnDemand\Jobs\DoDatabaseDumpJob;
+use MediaWiki\Extension\DumpsOnDemand\Backend\FileBackend;
+use MediaWiki\Extension\DumpsOnDemand\HTMLForm\Fields\HTMLHrefButtonField;
+use MediaWiki\Extension\DumpsOnDemand\Jobs\DoDatabaseDumpJob;
 use function time;
 
 class SpecialRequestDump extends FormSpecialPage {

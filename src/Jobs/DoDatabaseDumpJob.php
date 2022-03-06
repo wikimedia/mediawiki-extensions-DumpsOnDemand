@@ -1,10 +1,10 @@
 <?php
 
-namespace MediaWiki\Extensions\DumpsOnDemand\Jobs;
+namespace MediaWiki\Extension\DumpsOnDemand\Jobs;
 
 use GenericParameterJob;
 use Job;
-use MediaWiki\Extensions\DumpsOnDemand\Backend\FileBackend;
+use MediaWiki\Extension\DumpsOnDemand\Backend\FileBackend;
 use MediaWiki\MediaWikiServices;
 use WikiExporter;
 use Wikimedia\Rdbms\ILBFactory;

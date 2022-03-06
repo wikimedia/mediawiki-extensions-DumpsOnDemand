@@ -1,9 +1,9 @@
 <?php
 
-namespace MediaWiki\Extensions\DumpsOnDemand\Backend;
+namespace MediaWiki\Extension\DumpsOnDemand\Backend;
 
 use Config;
-use MediaWiki\Extensions\DumpsOnDemand\Export\OutputSinkFactory;
+use MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory;
 use WikiMap;
 use function file_exists;
 use function filemtime;

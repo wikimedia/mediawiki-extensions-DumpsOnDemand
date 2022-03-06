@@ -1,15 +1,15 @@
 <?php
 
-namespace MediaWiki\Extensions\DumpsOnDemand\Tests\Unit\HTMLForm\Fields;
+namespace MediaWiki\Extension\DumpsOnDemand\Tests\Unit\HTMLForm\Fields;
 
 use InvalidArgumentException;
-use MediaWiki\Extensions\DumpsOnDemand\HTMLForm\Fields\HTMLHrefButtonField;
+use MediaWiki\Extension\DumpsOnDemand\HTMLForm\Fields\HTMLHrefButtonField;
 use MediaWikiUnitTestCase;
 
 /**
  * Unit tests for the HTMLHrefButtonField.
  *
- * @covers \MediaWiki\Extensions\DumpsOnDemand\HTMLForm\Fields\HTMLHrefButtonField
+ * @covers \MediaWiki\Extension\DumpsOnDemand\HTMLForm\Fields\HTMLHrefButtonField
  */
 class HTMLHrefButtonFieldTest extends MediaWikiUnitTestCase {
 

@@ -1,16 +1,16 @@
 <?php
 
-namespace MediaWiki\Extensions\DumpsOnDemand\Tests\Unit\Export;
+namespace MediaWiki\Extension\DumpsOnDemand\Tests\Unit\Export;
 
 use DumpFileOutput;
-use MediaWiki\Extensions\DumpsOnDemand\Export\OutputSinkFactory;
+use MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory;
 use MediaWikiUnitTestCase;
 use function get_class;
 
 class OutputSinkFactoryTest extends MediaWikiUnitTestCase {
 	/**
-	 * @covers \MediaWiki\Extensions\DumpsOnDemand\Export\OutputSinkFactory::__construct
-	 * @covers \MediaWiki\Extensions\DumpsOnDemand\Export\OutputSinkFactory::getExtension
+	 * @covers \MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory::__construct
+	 * @covers \MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory::getExtension
 	 */
 	public function testGetExtension(): void {
 		$factory = new OutputSinkFactory( null, 'zip' );
@@ -19,8 +19,8 @@ class OutputSinkFactoryTest extends MediaWikiUnitTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\DumpsOnDemand\Export\OutputSinkFactory::__construct
-	 * @covers \MediaWiki\Extensions\DumpsOnDemand\Export\OutputSinkFactory::makeNewSinkForFile
+	 * @covers \MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory::__construct
+	 * @covers \MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory::makeNewSinkForFile
 	 */
 	public function testMakeNewSinkForFile(): void {
 		// Create a mock sink that doesn't call the parent constructor to prevent calls to the
