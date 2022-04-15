@@ -37,7 +37,7 @@ class OutputSinkFactory {
 	 * @param string $file
 	 * @return DumpOutput
 	 */
-	public function makeNewSinkForFile( string $file ) : DumpOutput {
+	public function makeNewSinkForFile( string $file ): DumpOutput {
 		return new $this->sinkClass( $file );
 	}
 
@@ -46,7 +46,7 @@ class OutputSinkFactory {
 	 *
 	 * @return string
 	 */
-	public function getExtension() : string {
+	public function getExtension(): string {
 		return $this->extension;
 	}
 
@@ -57,7 +57,7 @@ class OutputSinkFactory {
 	 *
 	 * @return self
 	 */
-	public static function fromAvailable() : self {
+	public static function fromAvailable(): self {
 		if ( extension_loaded( 'zlib' ) ) {
 			return new self( DumpGzFileOutput::class, 'gz' );
 		} elseif ( extension_loaded( 'zip' ) ) {
@@ -79,7 +79,7 @@ class OutputSinkFactory {
 	 * @param string|null $extension File extension of the compression format to use
 	 * @return self
 	 */
-	public static function fromExtension( ?string $extension ) : self {
+	public static function fromExtension( ?string $extension ): self {
 		if ( $extension === 'zip' && extension_loaded( 'zip' ) ) {
 			return new self( DumpZipFileOutput::class, 'zip' );
 		} elseif ( $extension === 'bz2' && extension_loaded( 'bz2' ) ) {

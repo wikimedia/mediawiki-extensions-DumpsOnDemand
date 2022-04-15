@@ -14,13 +14,13 @@ use function explode;
 class LocalFileBackendTest extends MediaWikiUnitTestCase {
 	private const WIKI_ID = 'unittestdb-unittestschema-unittestprefix';
 
-	public function setUp() : void {
+	public function setUp(): void {
 		global $wgDBname, $wgDBmwschema, $wgDBprefix;
 
 		list( $wgDBname, $wgDBmwschema, $wgDBprefix ) = explode( '-', self::WIKI_ID );
 	}
 
-	private function getBackend( string $extension = '' ) : LocalFileBackend {
+	private function getBackend( string $extension = '' ): LocalFileBackend {
 		return new LocalFileBackend(
 			new OutputSinkFactory( null, $extension ),
 			new HashConfig( [
@@ -30,35 +30,35 @@ class LocalFileBackendTest extends MediaWikiUnitTestCase {
 		);
 	}
 
-	public function testGetAllRevisionsFileUrl() : void {
+	public function testGetAllRevisionsFileUrl(): void {
 		static::assertSame(
 			'UploadPath/' . self::WIKI_ID . '_all_revisions.xml',
 			$this->getBackend()->getAllRevisionsFileUrl()
 		);
 	}
 
-	public function testGetCurrentRevisionsFileUrl() : void {
+	public function testGetCurrentRevisionsFileUrl(): void {
 		static::assertSame(
 			'UploadPath/' . self::WIKI_ID . '_current_revisions.xml',
 			$this->getBackend()->getCurrentRevisionsFileUrl()
 		);
 	}
 
-	public function testGetAllRevisionsFilePath() : void {
+	public function testGetAllRevisionsFilePath(): void {
 		static::assertSame(
 			'UploadDirectory/' . self::WIKI_ID . '_all_revisions.xml',
 			$this->getBackend()->getAllRevisionsFilePath()
 		);
 	}
 
-	public function testGetCurrentRevisionsFilePath() : void {
+	public function testGetCurrentRevisionsFilePath(): void {
 		static::assertSame(
 			'UploadDirectory/' . self::WIKI_ID . '_current_revisions.xml',
 			$this->getBackend()->getCurrentRevisionsFilePath()
 		);
 	}
 
-	public function testFileNameWithExtension() : void {
+	public function testFileNameWithExtension(): void {
 		static::assertStringEndsWith(
 			'.test',
 			$this->getBackend( 'test' )->getAllRevisionsFilePath()

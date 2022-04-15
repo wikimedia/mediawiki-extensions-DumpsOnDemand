@@ -13,7 +13,7 @@ use function get_class;
  * @covers \MediaWiki\Extensions\DumpsOnDemand\Backend\FileBackend
  */
 class FileBackendTest extends MediaWikiUnitTestCase {
-	public function testGetOutputSink() : void {
+	public function testGetOutputSink(): void {
 		// Create an anonymous class that doesn't call the constructor to prevent file system
 		// access.
 		$dumpFileOutput = new class( 'DUMMY VALUE PLEASE IGNORE' ) extends DumpFileOutput {
@@ -42,7 +42,7 @@ class FileBackendTest extends MediaWikiUnitTestCase {
 	 * @param string $extension
 	 * @param string $expected
 	 */
-	public function testGetFileTypeDescriptionMessage( string $extension, string $expected ) : void {
+	public function testGetFileTypeDescriptionMessage( string $extension, string $expected ): void {
 		$backend = new LocalFileBackend(
 			new OutputSinkFactory( null, $extension ),
 			new HashConfig( [
@@ -59,7 +59,7 @@ class FileBackendTest extends MediaWikiUnitTestCase {
 	 *
 	 * @return array
 	 */
-	public function provideExtensions() : array {
+	public function provideExtensions(): array {
 		return [
 			'None' => [ '', '' ],
 			'gz' => [ 'gz', 'dumpsondemand-filetype-gz' ],

@@ -8,7 +8,7 @@ class Hooks {
 	/**
 	 * Registration handler to exclude the dump job from regular execution.
 	 */
-	public static function onRegistration() : void {
+	public static function onRegistration(): void {
 		global $wgJobTypesExcludedFromDefaultQueue, $wgDumpsOnDemandUseDefaultJobQueue;
 
 		if ( !$wgDumpsOnDemandUseDefaultJobQueue ) {

@@ -13,7 +13,7 @@ use function touch;
  */
 class LocalFileBackendTest extends MediaWikiIntegrationTestCase {
 
-	public function testTimestampsMissing() : void {
+	public function testTimestampsMissing(): void {
 		$backend = new LocalFileBackend(
 			new OutputSinkFactory(),
 			new HashConfig( [
@@ -28,7 +28,7 @@ class LocalFileBackendTest extends MediaWikiIntegrationTestCase {
 		static::assertFalse( $backend->getAllRevisionsFileTimestamp() );
 	}
 
-	public function testTimestampPresent() : void {
+	public function testTimestampPresent(): void {
 		$tempDir = $this->getNewTempDirectory();
 
 		$backend = new LocalFileBackend(

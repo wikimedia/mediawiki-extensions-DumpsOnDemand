@@ -20,7 +20,7 @@ class DumpGzFileOutput extends DumpFileOutput {
 	 * @inheritDoc
 	 * @param string $string
 	 */
-	public function writeCloseStream( $string ) : void {
+	public function writeCloseStream( $string ): void {
 		$this->write( $string );
 
 		if ( $this->handle ) {
@@ -33,7 +33,7 @@ class DumpGzFileOutput extends DumpFileOutput {
 	 * @inheritDoc
 	 * @param string $string
 	 */
-	public function write( $string ) : void {
+	public function write( $string ): void {
 		gzwrite( $this->handle, $string );
 	}
 
@@ -42,7 +42,7 @@ class DumpGzFileOutput extends DumpFileOutput {
 	 * @param string $newname
 	 * @param bool $open
 	 */
-	public function closeAndRename( $newname, $open = false ) : void {
+	public function closeAndRename( $newname, $open = false ): void {
 		$newname = $this->checkRenameArgCount( $newname );
 
 		if ( $this->handle ) {

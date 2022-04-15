@@ -51,7 +51,7 @@ class LocalFileBackend extends FileBackend {
 	 * @param string $kind
 	 * @return string
 	 */
-	private function createFileName( string $kind ) : string {
+	private function createFileName( string $kind ): string {
 		$file = WikiMap::getCurrentWikiId() . "_$kind.xml";
 
 		if ( $this->outputSinkFactory->getExtension() !== '' ) {
@@ -73,7 +73,7 @@ class LocalFileBackend extends FileBackend {
 	 * @inheritDoc
 	 * @return string
 	 */
-	public function getAllRevisionsFileUrl() : string {
+	public function getAllRevisionsFileUrl(): string {
 		return $this->uploadPath . '/' . $this->createFileName( 'all_revisions' );
 	}
 
@@ -81,7 +81,7 @@ class LocalFileBackend extends FileBackend {
 	 * @inheritDoc
 	 * @return string
 	 */
-	public function getAllRevisionsFilePath() : string {
+	public function getAllRevisionsFilePath(): string {
 		return $this->uploadDirectory . '/' . $this->createFileName( 'all_revisions' );
 	}
 
@@ -97,7 +97,7 @@ class LocalFileBackend extends FileBackend {
 	 * @inheritDoc
 	 * @return string
 	 */
-	public function getCurrentRevisionsFileUrl() : string {
+	public function getCurrentRevisionsFileUrl(): string {
 		return $this->uploadPath . '/' . $this->createFileName( 'current_revisions' );
 	}
 
@@ -105,7 +105,7 @@ class LocalFileBackend extends FileBackend {
 	 * @inheritDoc
 	 * @return string
 	 */
-	public function getCurrentRevisionsFilePath() : string {
+	public function getCurrentRevisionsFilePath(): string {
 		return $this->uploadDirectory . '/' . $this->createFileName( 'current_revisions' );
 	}
 }

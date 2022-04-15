@@ -46,7 +46,7 @@ class DoDatabaseDumpJob extends Job implements GenericParameterJob {
 	 * @inheritDoc
 	 * @return bool
 	 */
-	public function run() : bool {
+	public function run(): bool {
 		$dbr = $this->lbFactory->newMainLB()->getMaintenanceConnectionRef( DB_REPLICA, 'dump' );
 		$dbr->setSessionOptions( [ 'connTimeout' => 3600 ] );
 
