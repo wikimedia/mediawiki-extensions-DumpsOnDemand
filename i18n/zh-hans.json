@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"StarrySky"
+		]
+	},
+	"dumpsondemand-request-dump-button-label": "请求一个新dump",
+	"log-name-dumprequest": "数据库dump请求日志"
+}
