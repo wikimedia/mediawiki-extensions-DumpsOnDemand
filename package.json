@@ -1,4 +1,5 @@
 {
+	"name": "DumpsOnDemand",
 	"private": true,
 	"scripts": {
 		"test": "npm -s run lint",
