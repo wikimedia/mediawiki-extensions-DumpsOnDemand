@@ -14,7 +14,7 @@
 	"dumpsondemand-current-revisions": "Toutes les pages avec seulement les révisions actuelles",
 	"dumpsondemand-current-revisions-help": "Cette version est la plus adaptée à une utilisation par robot.",
 	"dumpsondemand-all-revisions": "Toutes les pages avec leur historique",
-	"dumpsondemand-all-revisions-help": "Cette version est la plus appropriée pour les sauvegardes. Attention : Ce fichier peut être très gros !",
+	"dumpsondemand-all-revisions-help": "Cette version est la plus appropriée pour les sauvegardes. Attention : ce fichier peut être très gros !",
 	"dumpsondemand-request-dump-button-label": "Demander un nouveau dump",
 	"dumpsondemand-dump-already-requested": "Un dump a déjà été demandé",
 	"dumpsondemand-dump-unavailable": "Ce dump n’a pas encore été créé",
