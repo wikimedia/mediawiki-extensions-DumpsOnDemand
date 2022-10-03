@@ -15,14 +15,14 @@ class LocalFileBackend extends FileBackend {
 	 *
 	 * @var string
 	 */
-	private $uploadDirectory;
+	private string $uploadDirectory;
 
 	/**
 	 * The value of $wgUploadPath.
 	 *
 	 * @var string
 	 */
-	private $uploadPath;
+	private string $uploadPath;
 
 	/**
 	 * @param OutputSinkFactory $outputSinkFactory

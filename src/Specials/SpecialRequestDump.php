@@ -14,15 +14,9 @@ use MediaWiki\Extension\DumpsOnDemand\Jobs\DoDatabaseDumpJob;
 use function time;
 
 class SpecialRequestDump extends FormSpecialPage {
-	/**
-	 * @var JobQueueGroup
-	 */
-	private $jobQueueGroup;
+	private JobQueueGroup $jobQueueGroup;
 
-	/**
-	 * @var FileBackend
-	 */
-	private $fileBackend;
+	private FileBackend $fileBackend;
 
 	/**
 	 * The value of $wgDumpsOnDemandRequestLimit, which is the minimum time a regular user needs
@@ -30,7 +24,7 @@ class SpecialRequestDump extends FormSpecialPage {
 	 *
 	 * @var int
 	 */
-	private $requestLimit;
+	private int $requestLimit;
 
 	/**
 	 * @param FileBackend $fileBackend

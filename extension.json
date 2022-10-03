@@ -1,6 +1,6 @@
 {
 	"name": "DumpsOnDemand",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": [
 		"Mainframe98"
 	],
@@ -10,7 +10,7 @@
 	"license-name": "MIT",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">=1.38.0"
+		"MediaWiki": ">=1.40.0"
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\DumpsOnDemand\\": "src/"

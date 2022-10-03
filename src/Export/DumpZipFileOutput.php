@@ -9,10 +9,7 @@ use function pathinfo;
 use function unlink;
 
 class DumpZipFileOutput extends DumpFileOutput {
-	/**
-	 * @var ZipArchive
-	 */
-	private $archive;
+	private ZipArchive $archive;
 
 	/**
 	 * @param string $file

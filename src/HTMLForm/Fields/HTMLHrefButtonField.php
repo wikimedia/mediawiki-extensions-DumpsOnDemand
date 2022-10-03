@@ -19,45 +19,26 @@ use OOUI\HtmlSnippet;
  * - rel: Link type
  */
 class HTMLHrefButtonField extends HTMLButtonField {
-	/**
-	 * @var string
-	 */
-	private $href;
+	private string $href;
+
+	private ?string $target;
+
+	private ?string $icon;
+
+	/** @var string[]|null */
+	private ?array $rel = null;
 
 	/**
-	 * @var string[]|null
-	 */
-	private $rel;
-
-	/**
-	 * @var string|null
-	 */
-	private $target;
-
-	/**
-	 * @var string|null
-	 */
-	private $icon;
-
-	/**
-	 * Initialise the object.
-	 *
 	 * @param array $info Associative Array. See the HTMLForm documentation for the syntax
-	 * @throws InvalidArgumentException when no label has been set
+	 *    Unlike its parent, a label is required.
 	 */
 	public function __construct( array $info ) {
 		$this->href = $info['href'];
+		$this->target = $info['target'] ?? null;
+		$this->icon = $info['icon'] ?? null;
 
 		if ( isset( $info['rel'] ) ) {
 			$this->rel = (array)$info['rel'];
-		}
-
-		if ( isset( $info['target'] ) ) {
-			$this->target = $info['target'];
-		}
-
-		if ( isset( $info['icon'] ) ) {
-			$this->icon = $info['icon'];
 		}
 
 		if (
@@ -70,16 +51,13 @@ class HTMLHrefButtonField extends HTMLButtonField {
 			);
 		}
 
-		$info['formnovalidate'] = $info['formnovalidate'] ?? true;
+		$info['formnovalidate'] ??= true;
 
 		parent::__construct( $info );
 	}
 
 	/**
-	 * Get the OOUI widget for this field.
-	 *
-	 * @param string $value
-	 * @return ButtonWidget
+	 * @inheritDoc
 	 * @suppress PhanParamSignatureMismatch
 	 */
 	public function getInputOOUI( $value ): ButtonWidget {

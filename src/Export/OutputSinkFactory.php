@@ -13,14 +13,14 @@ class OutputSinkFactory {
 	 *
 	 * @var string
 	 */
-	private $sinkClass;
+	private string $sinkClass;
 
 	/**
 	 * File extension of the output file.
 	 *
 	 * @var string
 	 */
-	private $extension;
+	private string $extension;
 
 	/**
 	 * @param string|null $sinkClass Class name of a DumpFile descendant

@@ -22,15 +22,9 @@ use const DB_REPLICA;
 class DoDatabaseDumpJob extends Job implements GenericParameterJob {
 	public const JOB_NAME = 'DatabaseDumpGeneration';
 
-	/**
-	 * @var ILBFactory
-	 */
-	private $lbFactory;
+	private ILBFactory $lbFactory;
 
-	/**
-	 * @var FileBackend
-	 */
-	private $fileBackend;
+	private FileBackend $fileBackend;
 
 	/**
 	 * @param array $params

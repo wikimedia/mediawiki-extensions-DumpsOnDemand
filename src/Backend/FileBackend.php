@@ -10,10 +10,7 @@ use MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory;
  */
 abstract class FileBackend {
 
-	/**
-	 * @var OutputSinkFactory
-	 */
-	protected $outputSinkFactory;
+	protected OutputSinkFactory $outputSinkFactory;
 
 	/**
 	 * @param OutputSinkFactory $outputSinkFactory
