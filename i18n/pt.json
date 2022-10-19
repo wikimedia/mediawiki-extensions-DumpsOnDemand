@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"dumpsondemand-desc": "Permite que utilizadores privilegiados peçam cópias em ficheiro da base de dados",
+	"requestdump": "Pedir cópia em ficheiro da base de dados",
+	"requestdump-text": "As cópias em ficheiro da base de dados podem ser usadas como cópias de segurança pessoais ou para robôs de manutenção. Todos os pedidos são registados no [[Special:Log/dumprequest|registo de pedidos de cópia da base de dados em ficheiro]].",
+	"dumpsondemand-current-revisions": "Todas as páginas só com as revisões atuais",
+	"dumpsondemand-current-revisions-help": "Esta versão é a mais adequada para ser usada por robôs.",
+	"dumpsondemand-all-revisions": "Todas as páginas com o seu historial",
+	"dumpsondemand-all-revisions-help": "Esta versão é a mais adequada para cópias de segurança. Aviso: este ficheiro pode ser muito grande.",
+	"dumpsondemand-request-dump-button-label": "Pedir nova cópia em ficheiro",
+	"dumpsondemand-dump-already-requested": "Já foi pedida uma cópia em ficheiro",
+	"dumpsondemand-dump-unavailable": "Esta cópia em ficheiro ainda não foi criada",
+	"log-name-dumprequest": "Registo de pedidos de cópia da base de dados em ficheiro",
+	"log-description-dumprequest": "Esses eventos registam quando é pedida uma cópia da base de dados em ficheiro.",
+	"logentry-dumprequest": "pediu uma cópia da base de dados{{GENDER:$2|}}",
+	"right-dumpsondemand": "Pedir cópias da base de dados em ficheiro",
+	"action-dumpsondemand": "pedir cópias da base de dados em ficheiro",
+	"right-dumprequestlog": "Ver o registo de cópias da base de dados em ficheiro",
+	"action-dumprequestlog": "ver o registo de cópias da base de dados em ficheiro",
+	"right-dumpsondemand-limit-exempt": "Ignorar o limite de tempo para pedir cópias da base de dados em ficheiro",
+	"action-dumpsondemand-limit-exempt": "ignorar o limite de tempo para pedir cópias da base de dados em ficheiro",
+	"dumpsondemand-dump-requested": "Foi pedida uma cópia em ficheiro.",
+	"dumpsondemand-filetype-gz": "As cópias serão fornecidas na forma de ficheiro XML comprimido em gzip.",
+	"dumpsondemand-filetype-bz2": "As cópias serão fornecidas na forma de ficheiro XML comprimido em bzip2.",
+	"dumpsondemand-filetype-zip": "As cópias serão fornecidas na forma de ficheiro ZIP."
+}
