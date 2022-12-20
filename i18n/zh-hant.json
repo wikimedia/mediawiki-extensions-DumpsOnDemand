@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kly"
+			"Kly",
+			"捍粵者"
 		]
 	},
 	"dumpsondemand-desc": "允許有權限的使用者請求資料庫傾印",
@@ -12,7 +13,7 @@
 	"dumpsondemand-all-revisions": "所有帶有本身歷史的頁面",
 	"dumpsondemand-all-revisions-help": "此版本最適合用於備份。警告：此檔案內容可能非常大！",
 	"dumpsondemand-request-dump-button-label": "請求新的傾印",
-	"dumpsondemand-dump-already-requested": "傾印已被請求",
+	"dumpsondemand-dump-already-requested": "已有傾印請求",
 	"dumpsondemand-dump-unavailable": "此傾印尚未被建立。",
 	"log-name-dumprequest": "資料庫傾印請求日誌",
 	"log-description-dumprequest": "這些事件追蹤著資料庫傾印的請求。",
@@ -23,7 +24,7 @@
 	"action-dumprequestlog": "檢視資料庫傾印請求日誌",
 	"right-dumpsondemand-limit-exempt": "忽略資料庫傾印的時間限制",
 	"action-dumpsondemand-limit-exempt": "忽略資料庫傾印的時間限制",
-	"dumpsondemand-dump-requested": "傾印已被請求。",
+	"dumpsondemand-dump-requested": "已請求傾印",
 	"dumpsondemand-filetype-gz": "傾印會將 XML 檔案壓縮成 gzip 提供。",
 	"dumpsondemand-filetype-bz2": "傾印會將 XML 檔案壓縮成 bzip2 提供。",
 	"dumpsondemand-filetype-zip": "傾印將會以 ZIP 檔案提供。"
