@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"dumpsondemand-desc": "Privilegiranim uporabnikom omogoča zahtevanje izpisa podatkovne zbirke",
+	"dumpsondemand-extensionname": "DumpsOnDemand",
+	"requestdump": "Zahteva izpis podatkovne zbirke",
+	"requestdump-text": "Izpisi podatkovne zbirke se lahko uporabljajo kot osebna varnostna kopija ali za vzdrževalne bote. Vsi zahtevki se zabeležijo v [[Special:Log/dumprequest|dnevnik zahtevkov izpisov podatkovne zbirke]].",
+	"dumpsondemand-current-revisions": "Vse strani s samo trenutnimi redakcijami",
+	"dumpsondemand-current-revisions-help": "Ta različica je najprimernejša za uporabo z boti.",
+	"dumpsondemand-all-revisions": "Vse strani z njihovo zgodovino",
+	"dumpsondemand-all-revisions-help": "Ta različica je najprimernejša za varnostne kopije. Opozorilo: Ta datoteka je lahko zelo velika!",
+	"dumpsondemand-request-dump-button-label": "Zahtevaj nov izpis",
+	"dumpsondemand-dump-already-requested": "Izpis je že zahtevan",
+	"dumpsondemand-dump-unavailable": "Izpis še ni ustvarjen",
+	"log-name-dumprequest": "Dnevnik zahtevkov izpisov podatkovne zbirke",
+	"log-description-dumprequest": "Ti dogodki beležijo, kdaj so zahtevani izpisi podatkovne zbirke.",
+	"logentry-dumprequest": "je {{GENDER:$2|zahteval|zahtevala|zahteval_a}} izpis podatkovne zbirke",
+	"right-dumpsondemand": "Pridobitev izpisa podatkovne zbirke na zahtevo",
+	"action-dumpsondemand": "pridobitev izpisa podatkovne zbirke na zahtevo",
+	"right-dumprequestlog": "Ogled dnevnika zahtevkov izpisa podatkovne zbirke",
+	"action-dumprequestlog": "ogled dnevnika zahtevkov izpisa podatkovne zbirke",
+	"right-dumpsondemand-limit-exempt": "Prezrtje časovne omejitve za zahtevanje izpisa podatkovne zbirke",
+	"action-dumpsondemand-limit-exempt": "prezrtje časovne omejitve za zahtevanje izpisa podatkovne zbirke",
+	"dumpsondemand-dump-requested": "Izpis je zahtevan.",
+	"dumpsondemand-filetype-gz": "Izpisi bodo zagotovljeni kot gzip-stisnjena datoteka XML.",
+	"dumpsondemand-filetype-bz2": "Izpisi bodo zagotovljeni kot bzip2-stisnjena datoteka XML.",
+	"dumpsondemand-filetype-zip": "Izpisi bodo zagotovljeni kot datoteka ZIP."
+}
