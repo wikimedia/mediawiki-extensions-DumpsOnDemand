@@ -68,7 +68,15 @@
 		"dumprequest": "dumprequestlog"
 	},
 	"JobClasses": {
-		"DatabaseDumpGeneration": "MediaWiki\\Extension\\DumpsOnDemand\\Jobs\\DoDatabaseDumpJob"
+		"DatabaseDumpGeneration": {
+			"class": "MediaWiki\\Extension\\DumpsOnDemand\\Jobs\\DoDatabaseDumpJob",
+			"services": [
+				"DBLoadBalancerFactory",
+				"DumpsOnDemandFileBackend",
+				"WikiExporterFactory"
+			],
+			"needsPage": false
+		}
 	},
 	"AvailableRights": [
 		"dumprequestlog",
