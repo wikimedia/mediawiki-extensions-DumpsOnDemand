@@ -2,6 +2,7 @@
 
 namespace MediaWiki\Extension\DumpsOnDemand\Tests\Unit\HTMLForm\Fields;
 
+use HTMLForm;
 use InvalidArgumentException;
 use MediaWiki\Extension\DumpsOnDemand\HTMLForm\Fields\HTMLHrefButtonField;
 use MediaWikiUnitTestCase;
@@ -22,7 +23,8 @@ class HTMLHrefButtonFieldTest extends MediaWikiUnitTestCase {
 		$field = new HTMLHrefButtonField( [
 			'fieldname' => 'test',
 			'buttonlabel' => 'test',
-			'href' => self::HREF
+			'href' => self::HREF,
+			'parent' => $this->createMock( HTMLForm::class )
 		] );
 
 		$widget = $field->getInputOOUI( '' );
@@ -40,7 +42,8 @@ class HTMLHrefButtonFieldTest extends MediaWikiUnitTestCase {
 			'fieldname' => 'test',
 			'buttonlabel' => 'test',
 			'href' => self::HREF,
-			'target' => $target
+			'target' => $target,
+			'parent' => $this->createMock( HTMLForm::class )
 		] );
 
 		$widget = $field->getInputOOUI( '' );
@@ -58,7 +61,8 @@ class HTMLHrefButtonFieldTest extends MediaWikiUnitTestCase {
 			'fieldname' => 'test',
 			'buttonlabel' => 'test',
 			'href' => self::HREF,
-			'icon' => $icon
+			'icon' => $icon,
+			'parent' => $this->createMock( HTMLForm::class )
 		] );
 
 		$widget = $field->getInputOOUI( '' );
@@ -77,7 +81,8 @@ class HTMLHrefButtonFieldTest extends MediaWikiUnitTestCase {
 
 		new HTMLHrefButtonField( [
 			'fieldname' => 'test',
-			'href' => self::HREF
+			'href' => self::HREF,
+			'parent' => $this->createMock( HTMLForm::class )
 		] );
 	}
 
@@ -89,7 +94,8 @@ class HTMLHrefButtonFieldTest extends MediaWikiUnitTestCase {
 			'fieldname' => 'test',
 			'buttonlabel' => 'test',
 			'href' => self::HREF,
-			'rel' => [ 'noopener' ]
+			'rel' => [ 'noopener' ],
+			'parent' => $this->createMock( HTMLForm::class )
 		] );
 
 		$widget = $field->getInputOOUI( '' );
@@ -108,7 +114,8 @@ class HTMLHrefButtonFieldTest extends MediaWikiUnitTestCase {
 			'fieldname' => 'test',
 			'buttonlabel' => 'test',
 			'href' => self::HREF,
-			'rel' => [ 'noopener', 'nofollow' ]
+			'rel' => [ 'noopener', 'nofollow' ],
+			'parent' => $this->createMock( HTMLForm::class )
 		] );
 
 		$widget = $field->getInputOOUI( '' );
