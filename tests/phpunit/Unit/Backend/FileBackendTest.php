@@ -59,7 +59,7 @@ class FileBackendTest extends MediaWikiUnitTestCase {
 	 *
 	 * @return array
 	 */
-	public function provideExtensions(): array {
+	public static function provideExtensions(): array {
 		return [
 			'None' => [ '', '' ],
 			'gz' => [ 'gz', 'dumpsondemand-filetype-gz' ],

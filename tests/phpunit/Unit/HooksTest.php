@@ -36,7 +36,7 @@ class HooksTest extends MediaWikiUnitTestCase {
 	 *
 	 * @return array
 	 */
-	public function provideForOnRegistration(): array {
+	public static function provideForOnRegistration(): array {
 		return [
 			[ [], true ],
 			[ [ DoDatabaseDumpJob::JOB_NAME ], false ]
