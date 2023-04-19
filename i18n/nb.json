@@ -7,7 +7,7 @@
 	"dumpsondemand-desc": "La priviligerte brukere be om databasekopier",
 	"requestdump": "Be om databasekopi",
 	"requestdump-text": "Databasekopier kan brukes som personlig backup eller for vedlikeholdsbotter. Alle forespørsler logges i [[Special:Log/dumprequest|databasekopiloggen]].",
-	"dumpsondemand-current-revisions": "Alle sider med kun nåværende revisjoner",
+	"dumpsondemand-current-revisions": "Alle sider med kun nåværende sideversjoner",
 	"dumpsondemand-current-revisions-help": "Denne versjonen er mest passende for botbruk.",
 	"dumpsondemand-all-revisions": "Alle sider med historikk",
 	"dumpsondemand-all-revisions-help": "Denne versjonen passer best for backup. Advarsel: Denne fila kan være veldig stor!",
