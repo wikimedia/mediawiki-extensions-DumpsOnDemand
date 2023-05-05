@@ -6,8 +6,7 @@ use Job;
 use MediaWiki\Export\WikiExporterFactory;
 use MediaWiki\Extension\DumpsOnDemand\Backend\FileBackend;
 use WikiExporter;
-use Wikimedia\Rdbms\ILBFactory;
-use const DB_REPLICA;
+use Wikimedia\Rdbms\IConnectionProvider;
 
 /**
  * Job that creates database dumps.
@@ -21,7 +20,7 @@ use const DB_REPLICA;
 class DoDatabaseDumpJob extends Job {
 	public const JOB_NAME = 'DatabaseDumpGeneration';
 
-	private ILBFactory $lbFactory;
+	private IConnectionProvider $dbProvider;
 
 	private FileBackend $fileBackend;
 
@@ -29,19 +28,19 @@ class DoDatabaseDumpJob extends Job {
 
 	/**
 	 * @param array $params
-	 * @param ILBFactory $lbFactory
+	 * @param IConnectionProvider $dbProvider
 	 * @param FileBackend $fileBackend
 	 * @param WikiExporterFactory $wikiExporterFactory
 	 */
 	public function __construct(
 		array $params,
-		ILBFactory $lbFactory,
+		IConnectionProvider $dbProvider,
 		FileBackend $fileBackend,
 		WikiExporterFactory $wikiExporterFactory
 	) {
 		parent::__construct( self::JOB_NAME, $params );
 
-		$this->lbFactory = $lbFactory;
+		$this->dbProvider = $dbProvider;
 		$this->fileBackend = $fileBackend;
 		$this->wikiExporterFactory = $wikiExporterFactory;
 	}
@@ -51,7 +50,7 @@ class DoDatabaseDumpJob extends Job {
 	 * @return true
 	 */
 	public function run(): bool {
-		$dbr = $this->lbFactory->newMainLB()->getMaintenanceConnectionRef( DB_REPLICA, 'dump' );
+		$dbr = $this->dbProvider->getReplicaDatabase( false, 'dump' );
 		$dbr->setSessionOptions( [ 'connTimeout' => 3600 ] );
 
 		if ( $this->params['fullHistory'] ) {
