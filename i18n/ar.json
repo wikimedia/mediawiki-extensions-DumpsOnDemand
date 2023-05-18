@@ -1,8 +1,31 @@
 {
 	"@metadata": {
 		"authors": [
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Alshamiri1"
 		]
 	},
-	"dumpsondemand-all-revisions": "كل الصفحات مع تاريخها"
+	"dumpsondemand-desc": "يسمح للمستخدمين المتميزين بطلب تفريغ قاعدة البيانات",
+	"requestdump": "طلب تفريغ قاعدة البيانات",
+	"requestdump-text": "يمكن استخدام مقالب قاعدة البيانات كنسخة احتياطية شخصية أو لروبوتات الصيانة. يتم تسجيل جميع الطلبات في [[Special: Log / dumprequest | سجل طلب تفريغ قاعدة البيانات]].",
+	"dumpsondemand-current-revisions": "جميع الصفحات مع المراجعات الحالية فقط",
+	"dumpsondemand-current-revisions-help": "هذا الإصدار هو الأنسب لاستخدام البوت.",
+	"dumpsondemand-all-revisions": "كل الصفحات مع تاريخها",
+	"dumpsondemand-all-revisions-help": "هذا الإصدار هو الأنسب للنسخ الاحتياطية. تحذير: قد يكون هذا الملف كبيرًا جدًا!",
+	"dumpsondemand-request-dump-button-label": "طلب تفريغ جديد",
+	"dumpsondemand-dump-already-requested": "تم بالفعل طلب تفريغ",
+	"dumpsondemand-dump-unavailable": "لم يتم إنشاء هذا التفريغ بعد",
+	"log-name-dumprequest": "سجل طلب تفريغ قاعدة البيانات",
+	"log-description-dumprequest": "تتبع هذه الأحداث عند طلب تفريغ قاعدة بيانات.",
+	"logentry-dumprequest": "{{GENDER:$2| طلب}} تفريغ قاعدة البيانات",
+	"right-dumpsondemand": "طلب مقالب قاعدة البيانات عند الطلب",
+	"action-dumpsondemand": "طلب مقالب قاعدة البيانات عند الطلب",
+	"right-dumprequestlog": "عرض سجل طلب تفريغ قاعدة البيانات",
+	"action-dumprequestlog": "عرض سجل طلب تفريغ قاعدة البيانات",
+	"right-dumpsondemand-limit-exempt": "تجاهل الحد الزمني لطلب تفريغ قاعدة البيانات",
+	"action-dumpsondemand-limit-exempt": "تجاهل الحد الزمني لطلب تفريغ قاعدة البيانات",
+	"dumpsondemand-dump-requested": "تم طلب تفريغ.",
+	"dumpsondemand-filetype-gz": "سيتم توفير عمليات التفريغ كملف XML مضغوط بتنسيق gzip.",
+	"dumpsondemand-filetype-bz2": "سيتم توفير عمليات التفريغ كملف XML مضغوط بتنسيق bzip2.",
+	"dumpsondemand-filetype-zip": "سيتم توفير عمليات التفريغ في ملف مضغوط."
 }
