@@ -3,9 +3,10 @@
 namespace MediaWiki\Extension\DumpsOnDemand\Tests\Unit\Backend;
 
 use DumpFileOutput;
-use HashConfig;
+use MediaWiki\Config\HashConfig;
 use MediaWiki\Extension\DumpsOnDemand\Backend\LocalFileBackend;
 use MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory;
+use MediaWiki\MainConfigNames;
 use MediaWikiUnitTestCase;
 use function get_class;
 
@@ -25,8 +26,8 @@ class FileBackendTest extends MediaWikiUnitTestCase {
 		$backend = new LocalFileBackend(
 			new OutputSinkFactory( get_class( $dumpFileOutput ) ),
 			new HashConfig( [
-				'UploadDirectory' => 'UploadDirectory',
-				'UploadPath' => 'UploadPath'
+				MainConfigNames::UploadDirectory => 'UploadDirectory',
+				MainConfigNames::UploadPath => 'UploadPath'
 			] )
 		);
 
@@ -46,8 +47,8 @@ class FileBackendTest extends MediaWikiUnitTestCase {
 		$backend = new LocalFileBackend(
 			new OutputSinkFactory( null, $extension ),
 			new HashConfig( [
-				'UploadDirectory' => 'UploadDirectory',
-				'UploadPath' => 'UploadPath'
+				MainConfigNames::UploadDirectory => 'UploadDirectory',
+				MainConfigNames::UploadPath => 'UploadPath'
 			] )
 		);
 

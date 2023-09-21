@@ -2,9 +2,10 @@
 
 namespace MediaWiki\Extension\DumpsOnDemand\Tests\Integration\Backend;
 
-use HashConfig;
+use MediaWiki\Config\HashConfig;
 use MediaWiki\Extension\DumpsOnDemand\Backend\LocalFileBackend;
 use MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory;
+use MediaWiki\MainConfigNames;
 use MediaWikiIntegrationTestCase;
 use function touch;
 
@@ -19,8 +20,8 @@ class LocalFileBackendTest extends MediaWikiIntegrationTestCase {
 			new HashConfig( [
 				// wfTempDir uses the global $wgTmpDirectory, which isn't defined in unit tests.
 				// Append a directory so that there is an empty directory to check in.
-				'UploadDirectory' => $this->getNewTempDirectory(),
-				'UploadPath' => ''
+				MainConfigNames::UploadDirectory => $this->getNewTempDirectory(),
+				MainConfigNames::UploadPath => ''
 			] )
 		);
 
@@ -36,8 +37,8 @@ class LocalFileBackendTest extends MediaWikiIntegrationTestCase {
 			new HashConfig( [
 				// wfTempDir uses the global $wgTmpDirectory, which isn't defined in unit tests.
 				// Append a directory so that there is an empty directory to check in.
-				'UploadDirectory' => $tempDir,
-				'UploadPath' => ''
+				MainConfigNames::UploadDirectory => $tempDir,
+				MainConfigNames::UploadPath => ''
 			] )
 		);
 

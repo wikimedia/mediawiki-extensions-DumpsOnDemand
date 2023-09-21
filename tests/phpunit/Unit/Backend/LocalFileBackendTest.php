@@ -2,9 +2,10 @@
 
 namespace MediaWiki\Extension\DumpsOnDemand\Tests\Unit\Backend;
 
-use HashConfig;
+use MediaWiki\Config\HashConfig;
 use MediaWiki\Extension\DumpsOnDemand\Backend\LocalFileBackend;
 use MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory;
+use MediaWiki\MainConfigNames;
 use MediaWikiUnitTestCase;
 use function explode;
 
@@ -24,8 +25,8 @@ class LocalFileBackendTest extends MediaWikiUnitTestCase {
 		return new LocalFileBackend(
 			new OutputSinkFactory( null, $extension ),
 			new HashConfig( [
-				'UploadDirectory' => 'UploadDirectory',
-				'UploadPath' => 'UploadPath'
+				MainConfigNames::UploadDirectory => 'UploadDirectory',
+				MainConfigNames::UploadPath => 'UploadPath'
 			] )
 		);
 	}

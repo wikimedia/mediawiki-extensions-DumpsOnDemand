@@ -1,6 +1,6 @@
 {
 	"name": "DumpsOnDemand",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"author": [
 		"Mainframe98"
 	],
@@ -10,7 +10,7 @@
 	"license-name": "MIT",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">=1.40.0"
+		"MediaWiki": ">=1.41.0"
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\DumpsOnDemand\\": "src/"
@@ -37,7 +37,7 @@
 		"src/ServiceWiring.php"
 	],
 	"ConfigRegistry": {
-		"DumpsOnDemand": "GlobalVarConfig::newInstance"
+		"DumpsOnDemand": "MediaWiki\\Config\\GlobalVarConfig::newInstance"
 	},
 	"config": {
 		"DumpsOnDemandUseDefaultJobQueue": {
