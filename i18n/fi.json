@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jack Phoenix"
+		]
+	},
+	"dumpsondemand-desc": "Mahdollistaa käyttöoikeuksin varustettujen käyttäjien pyytää tietokantavedoksia",
+	"requestdump": "Pyydä tietokantavedosta",
+	"requestdump-text": "Tietokantavedoksia voi käyttää henkilökohtaisena varmuuskopiona tai huoltorobottien käyttöön. Kaikki pyynnöt tallennetaan [[Special:Log/dumprequest|tietokantavedospyyntöjen lokiin]].",
+	"dumpsondemand-current-revisions": "Kaikki sivut vain nykyisin versioin",
+	"dumpsondemand-current-revisions-help": "Tämä versio on parhain bottien käyttöön.",
+	"dumpsondemand-all-revisions": "Kaikki sivut historioineen",
+	"dumpsondemand-all-revisions-help": "Tämä versio on parhain varmuuskopioksi. Varoitus: Tämä tiedosto voi olla erittäin suuri!",
+	"dumpsondemand-request-dump-button-label": "Pyydä uutta vedosta",
+	"dumpsondemand-dump-already-requested": "Vedosta on jo pyydetty",
+	"dumpsondemand-dump-unavailable": "Tätä vedosta ei ole vielä luotu",
+	"log-name-dumprequest": "Tietokantavedospyyntöjen loki",
+	"log-description-dumprequest": "Nämä tapahtumat liittyvät tietokantavedosten pyyntöihin.",
+	"logentry-dumprequest": "{{GENDER:$2|pyysi}} tietokantavedosta",
+	"right-dumpsondemand": "Pyytää tietokantavedoksia halutessaan",
+	"action-dumpsondemand": "pyytää tietokantavedoksia halutessasi",
+	"right-dumprequestlog": "Tarkastella tietokantavedospyyntöjen lokia",
+	"action-dumprequestlog": "tarkastella tietokantavedospyyntöjen lokia",
+	"right-dumpsondemand-limit-exempt": "Ohita aikarajoitus tietokantavedosten pyytämiseen",
+	"action-dumpsondemand-limit-exempt": "ohittaa aikarajoitusta tietokantavedosten pyytämiseen",
+	"dumpsondemand-dump-requested": "Vedospyyntö on lähetetty.",
+	"dumpsondemand-filetype-gz": "Vedokset toimitetaan gzip-pakattuna XML-tiedostona.",
+	"dumpsondemand-filetype-bz2": "Vedokset toimitetaan bzip2-pakattuna XML-tiedostona.",
+	"dumpsondemand-filetype-zip": "Vedokset toimitetaan ZIP-tiedostona."
+}
