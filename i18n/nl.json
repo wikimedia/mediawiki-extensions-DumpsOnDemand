@@ -1,11 +1,31 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"McDutchie"
 		]
 	},
+	"dumpsondemand-desc": "Hiermee kunnen bevoorrechte gebruikers databasedumps aanvragen",
+	"requestdump": "Een databasedump aanvragen",
+	"requestdump-text": "Databasedumps kunnen worden gebruikt als persoonlijke back-up of voor onderhoudsrobots. Alle aanvragen worden vastgelegd in het [[Special:Log/dumprequest|logboek aanvragen databasedumps]].",
 	"dumpsondemand-current-revisions": "Alle pagina's met alleen de huidige versies",
 	"dumpsondemand-current-revisions-help": "Deze versie is het meest geschikt voor het gebruik door bots.",
 	"dumpsondemand-all-revisions": "Alle pagina's met hun geschiedenis",
-	"dumpsondemand-all-revisions-help": "Deze versie is het meest geschikt voor backups. Waarschuwing: Dit bestand kan erg groot zijn!"
+	"dumpsondemand-all-revisions-help": "Deze versie is het meest geschikt voor backups. Waarschuwing: Dit bestand kan erg groot zijn!",
+	"dumpsondemand-request-dump-button-label": "Een nieuwe dump aanvragen",
+	"dumpsondemand-dump-already-requested": "Er is al een dump aangevraagd",
+	"dumpsondemand-dump-unavailable": "Deze dump is nog niet aangemaakt",
+	"log-name-dumprequest": "Logboek aanvragen databasedumps",
+	"log-description-dumprequest": "Deze gebeurtenissen houden bij wanneer een databasedump wordt aangevraagd.",
+	"logentry-dumprequest": "{{GENDER:$2|heeft}} een databasedump aangevraagd",
+	"right-dumpsondemand": "Databasedumps aanvragen",
+	"action-dumpsondemand": "databasedumps aan te vragen",
+	"right-dumprequestlog": "Het logboek aanvragen databasedumps inzien",
+	"action-dumprequestlog": "het logboek aanvragen databasedumps in te zien",
+	"right-dumpsondemand-limit-exempt": "De tijdslimiet voor het aanvragen van databasedumps negeren",
+	"action-dumpsondemand-limit-exempt": "de tijdslimiet voor het aanvragen van databasedumps te negeren",
+	"dumpsondemand-dump-requested": "Er is een dump aangevraagd.",
+	"dumpsondemand-filetype-gz": "De dumps worden aangeleverd als een met gzip gecomprimeerd XML-bestand.",
+	"dumpsondemand-filetype-bz2": "De dumps worden aangeleverd als een met bzip2 gecomprimeerd XML-bestand.",
+	"dumpsondemand-filetype-zip": "De dumps worden aangeleverd in een ZIP-bestand."
 }
