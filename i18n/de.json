@@ -3,11 +3,31 @@
 		"authors": [
 			"Druesenfieber",
 			"FF-11",
-			"FF11"
+			"FF11",
+			"Nekky-chan"
 		]
 	},
+	"dumpsondemand-desc": "Erlaubt berechtigten Benutzern, Datenbank-Dumps anzufordern",
 	"requestdump": "Einen Datenbank-Dump anfragen",
+	"requestdump-text": "Datenbank-Dumps können als persönliches Backup oder für Wartungsbots genutzt werden. Alle Anfragen werden im [[Special:Log/dumprequest|Datenbank-Dump Anfrage-Logbuch]] protokolliert.",
+	"dumpsondemand-current-revisions": "Alle Seiten nur mit der aktuellen Versionsgeschichte",
 	"dumpsondemand-current-revisions-help": "Diese Version ist am Besten für die Verwendung durch Bots geeignet.",
 	"dumpsondemand-all-revisions": "Alle Seiten mit ihrer Versionsgeschichte",
-	"dumpsondemand-all-revisions-help": "Diese Version ist für Backups am Besten geeignet. Warnung: Diese Datei kann sehr groß sein!"
+	"dumpsondemand-all-revisions-help": "Diese Version ist für Backups am Besten geeignet. Warnung: Diese Datei kann sehr groß sein!",
+	"dumpsondemand-request-dump-button-label": "Neuen Dump anfordern",
+	"dumpsondemand-dump-already-requested": "Ein Dump wurde bereits angefordert",
+	"dumpsondemand-dump-unavailable": "Dieser Dump wurde noch nicht erstellt",
+	"log-name-dumprequest": "Logbuch der Datenbank-Dump-Anfragen",
+	"log-description-dumprequest": "Diese Ereignisse verfolgen, wann ein Datenbank-Dump angefordert wurde.",
+	"logentry-dumprequest": "{{GENDER:$2|forderte}} ein Datenbank-Dump an",
+	"right-dumpsondemand": "Datenbank-Dumps auf Anfrage anfordern",
+	"action-dumpsondemand": "Datenbank-Dumps auf Anfrage anzufordern",
+	"right-dumprequestlog": "Zeige das Logbuch der Datenbank-Dump-Anfragen an",
+	"action-dumprequestlog": "das Logbuch für Datanbank-Dump-Anfragen anzuzeigen",
+	"right-dumpsondemand-limit-exempt": "Zeitlimits für die Anforderung von Datenbank-Dumps ignorieren",
+	"action-dumpsondemand-limit-exempt": "Zeitlimits für die Anforderung von Datenbank-Dumps zu ignorieren",
+	"dumpsondemand-dump-requested": "Ein Dump wurde angefordert.",
+	"dumpsondemand-filetype-gz": "Die Dumps werden als gzip-komprimierte XML-Datei bereitgestellt.",
+	"dumpsondemand-filetype-bz2": "Die Dumps werden als bzip2-komprimierte XML-Datei bereitgestellt.",
+	"dumpsondemand-filetype-zip": "Die Dumps werden in einer ZIP-Datei bereitgestellt."
 }
