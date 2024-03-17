@@ -18,7 +18,7 @@ class LocalFileBackendTest extends MediaWikiUnitTestCase {
 	public function setUp(): void {
 		global $wgDBname, $wgDBmwschema, $wgDBprefix;
 
-		list( $wgDBname, $wgDBmwschema, $wgDBprefix ) = explode( '-', self::WIKI_ID );
+		[ $wgDBname, $wgDBmwschema, $wgDBprefix ] = explode( '-', self::WIKI_ID );
 	}
 
 	private function getBackend( string $extension = '' ): LocalFileBackend {

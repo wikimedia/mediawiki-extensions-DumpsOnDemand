@@ -23,7 +23,7 @@ class DumpZipFileOutput extends DumpFileOutput {
 			throw new MWException( 'Failed to open zip file', $res );
 		}
 
-		list( 'dirname' => $dirname, 'filename' => $filename ) = pathinfo( $file );
+		[ 'dirname' => $dirname, 'filename' => $filename ] = pathinfo( $file );
 		parent::__construct( "$dirname/$filename" );
 	}
 
