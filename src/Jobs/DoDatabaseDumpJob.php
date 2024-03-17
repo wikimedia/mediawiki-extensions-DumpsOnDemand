@@ -51,6 +51,7 @@ class DoDatabaseDumpJob extends Job {
 	 */
 	public function run(): bool {
 		$dbr = $this->dbProvider->getReplicaDatabase( false, 'dump' );
+		'@phan-var \Wikimedia\Rdbms\IDatabase $dbr';
 		$dbr->setSessionOptions( [ 'connTimeout' => 3600 ] );
 
 		if ( $this->params['fullHistory'] ) {
