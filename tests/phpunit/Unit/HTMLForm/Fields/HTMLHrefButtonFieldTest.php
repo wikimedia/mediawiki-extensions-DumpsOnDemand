@@ -2,9 +2,9 @@
 
 namespace MediaWiki\Extension\DumpsOnDemand\Tests\Unit\HTMLForm\Fields;
 
-use HTMLForm;
 use InvalidArgumentException;
 use MediaWiki\Extension\DumpsOnDemand\HTMLForm\Fields\HTMLHrefButtonField;
+use MediaWiki\HTMLForm\HTMLForm;
 use MediaWikiUnitTestCase;
 
 /**

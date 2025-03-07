@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\DumpsOnDemand\HTMLForm\Fields;
 
-use HTMLButtonField;
 use InvalidArgumentException;
+use MediaWiki\HTMLForm\Field\HTMLButtonField;
 use OOUI\ButtonWidget;
 use OOUI\Element;
 use OOUI\HtmlSnippet;

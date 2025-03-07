@@ -3,7 +3,7 @@
 namespace MediaWiki\Extension\DumpsOnDemand\Export;
 
 use DumpFileOutput;
-use MWException;
+use RuntimeException;
 use ZipArchive;
 use function pathinfo;
 use function unlink;
@@ -11,16 +11,12 @@ use function unlink;
 class DumpZipFileOutput extends DumpFileOutput {
 	private ZipArchive $archive;
 
-	/**
-	 * @param string $file
-	 * @throws MWException
-	 */
 	public function __construct( string $file ) {
 		$this->archive = new ZipArchive();
 		$res = $this->archive->open( $file, ZipArchive::OVERWRITE );
 
 		if ( $res !== true ) {
-			throw new MWException( 'Failed to open zip file', $res );
+			throw new RuntimeException( 'Failed to open zip file', $res );
 		}
 
 		[ 'dirname' => $dirname, 'filename' => $filename ] = pathinfo( $file );
@@ -42,7 +38,6 @@ class DumpZipFileOutput extends DumpFileOutput {
 	 * @inheritDoc
 	 * @param string|string[] $newname
 	 * @param bool $open
-	 * @throws MWException
 	 */
 	public function closeAndRename( $newname, $open = false ): void {
 		parent::closeAndRename( $newname, $open );

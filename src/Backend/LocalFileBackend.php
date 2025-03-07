@@ -4,7 +4,7 @@ namespace MediaWiki\Extension\DumpsOnDemand\Backend;
 
 use Config;
 use MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory;
-use WikiMap;
+use MediaWiki\WikiMap\WikiMap;
 use function file_exists;
 use function filemtime;
 

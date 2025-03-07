@@ -2,7 +2,6 @@
 
 namespace MediaWiki\Extension\DumpsOnDemand\Specials;
 
-use HTMLForm;
 use JobQueueGroup;
 use JobSpecification;
 use ManualLogEntry;
@@ -10,6 +9,7 @@ use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Extension\DumpsOnDemand\Backend\FileBackend;
 use MediaWiki\Extension\DumpsOnDemand\HTMLForm\Fields\HTMLHrefButtonField;
 use MediaWiki\Extension\DumpsOnDemand\Jobs\DoDatabaseDumpJob;
+use MediaWiki\HTMLForm\HTMLForm;
 use MediaWiki\SpecialPage\FormSpecialPage;
 use function time;
 
