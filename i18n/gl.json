@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"dumpsondemand-desc": "Permite que os usuarios privilexiados soliciten copias de seguridade da base de datos",
+	"requestdump": "Solicitar unha copia de seguridade da base de datos",
+	"requestdump-text": "As descargas da bases de datos pódense usar como copia de seguridade persoal ou para bots de mantemento. Todas as solicitudes rexístranse no [[Special:Log/dumprequest|rexistro de solicitudes de copia de seguridade da base de datos]].",
+	"dumpsondemand-current-revisions": "Todas as páxinas unicamente coas súas revisións actuais",
+	"dumpsondemand-current-revisions-help": "Esta versión é a máis axeitada para o uso de bots.",
+	"dumpsondemand-all-revisions": "Todas as páxinas cos seus historiais",
+	"dumpsondemand-all-revisions-help": "Esta versión é a máis axeitada para as copias de seguridade. Aviso: Este ficheiro pode ser moi grande!",
+	"dumpsondemand-request-dump-button-label": "Solicitar unha copia de seguridade nova",
+	"dumpsondemand-dump-already-requested": "Xa se solicitou unha copia de seguridade",
+	"dumpsondemand-dump-unavailable": "Aínda non se creou esta copia de seguridade",
+	"log-name-dumprequest": "Rexistro de solicitudes de copia de seguridade da base de datos",
+	"log-description-dumprequest": "Estes eventos fan un seguimiento de cando se solicita unha copia de seguridade da base de datos.",
+	"logentry-dumprequest": "{{GENDER:$2|solicitou}} unha copia de seguridade da base de datos",
+	"right-dumpsondemand": "Solicitar copias de seguridade da base de datos baixo demanda",
+	"action-dumpsondemand": "solicitar copias de seguridade da base de datos baixo demanda",
+	"right-dumprequestlog": "Ver o rexistro de solicitudes de copia de seguridade da base de datos",
+	"action-dumprequestlog": "ver o rexistro de solicitudes de copia de seguridade da base de datos",
+	"right-dumpsondemand-limit-exempt": "Ignorar o límite de tempo para solicitar copias de seguridade da base de datos",
+	"action-dumpsondemand-limit-exempt": "ignorar o límite de tempo para solicitar copias de seguridade da base de datos",
+	"dumpsondemand-dump-requested": "Solicitouse unha copia de seguridade.",
+	"dumpsondemand-filetype-gz": "As copias de seguridade forneceranse como un ficheiro XML comprimido con gzip.",
+	"dumpsondemand-filetype-bz2": "As copias de seguridade forneceranse como un ficheiro XML comprimido con bzip2.",
+	"dumpsondemand-filetype-zip": "As copias de seguridade forneceranse nun ficheiro ZIP."
+}
