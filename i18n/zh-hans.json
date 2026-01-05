@@ -1,9 +1,31 @@
 {
 	"@metadata": {
 		"authors": [
-			"StarrySky"
+			"StarrySky",
+			"Peterxy12"
 		]
 	},
+	"dumpsondemand-desc": "允许有权限的用户请求数据库转储",
+	"requestdump": "请求数据库转储",
+	"requestdump-text": "数据库转储可使用在个人备份或是维护机器人。所有的请求会记在[[Special:Log/dumprequest|数据库转储请求日志]]。",
+	"dumpsondemand-current-revisions": "仅包含目前修订的所有页面",
+	"dumpsondemand-current-revisions-help": "此版本最适合机器人使用。",
+	"dumpsondemand-all-revisions": "所有带有本身历史的页面",
+	"dumpsondemand-all-revisions-help": "此版本最适合用于备份。警告：此文件内容可能非常大！",
 	"dumpsondemand-request-dump-button-label": "请求一个新dump",
-	"log-name-dumprequest": "数据库dump请求日志"
+	"dumpsondemand-dump-already-requested": "已有转储请求",
+	"dumpsondemand-dump-unavailable": "此转储尚未被创建",
+	"log-name-dumprequest": "数据库dump请求日志",
+	"log-description-dumprequest": "这些事件跟踪着数据库转储的请求。",
+	"logentry-dumprequest": "{{GENDER:$2|已请求}} 数据库转储",
+	"right-dumpsondemand": "在demand请求数据库转储",
+	"action-dumpsondemand": "在demand请求数据库转储",
+	"right-dumprequestlog": "查看数据库转储请求日志",
+	"action-dumprequestlog": "查看数据库转储请求日志",
+	"right-dumpsondemand-limit-exempt": "忽略数据库转储的时间限制",
+	"action-dumpsondemand-limit-exempt": "忽略数据库转储的时间限制",
+	"dumpsondemand-dump-requested": "已请求转储。",
+	"dumpsondemand-filetype-gz": "转储会将XML文件压缩成gzip提供。",
+	"dumpsondemand-filetype-bz2": "转储会将XML文件压缩成bzip2提供。",
+	"dumpsondemand-filetype-zip": "转储将会以ZIP文件提供。"
 }
