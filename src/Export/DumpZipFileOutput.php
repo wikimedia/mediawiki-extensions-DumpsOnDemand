@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\DumpsOnDemand\Export;
 
-use DumpFileOutput;
+use MediaWiki\Export\DumpFileOutput;
 use RuntimeException;
 use ZipArchive;
 use function pathinfo;

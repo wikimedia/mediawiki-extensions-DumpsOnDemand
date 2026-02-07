@@ -2,10 +2,10 @@
 
 namespace MediaWiki\Extension\DumpsOnDemand\Jobs;
 
-use Job;
+use MediaWiki\Export\WikiExporter;
 use MediaWiki\Export\WikiExporterFactory;
 use MediaWiki\Extension\DumpsOnDemand\Backend\FileBackend;
-use WikiExporter;
+use MediaWiki\JobQueue\Job;
 use Wikimedia\Rdbms\IConnectionProvider;
 
 /**

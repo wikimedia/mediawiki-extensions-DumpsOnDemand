@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\DumpsOnDemand\Tests\Unit\Export;
 
-use DumpFileOutput;
+use MediaWiki\Export\DumpFileOutput;
 use MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory;
 use MediaWikiUnitTestCase;
 use function get_class;

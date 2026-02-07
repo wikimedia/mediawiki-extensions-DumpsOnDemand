@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\DumpsOnDemand\Export;
 
-use DumpFileOutput;
+use MediaWiki\Export\DumpFileOutput;
 use function gzclose;
 use function gzopen;
 use function gzwrite;

@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\DumpsOnDemand\Tests\Unit\Backend;
 
-use DumpFileOutput;
 use MediaWiki\Config\HashConfig;
+use MediaWiki\Export\DumpFileOutput;
 use MediaWiki\Extension\DumpsOnDemand\Backend\LocalFileBackend;
 use MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory;
 use MediaWiki\MainConfigNames;

@@ -10,7 +10,7 @@
 	"license-name": "MIT",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">=1.41.0"
+		"MediaWiki": ">=1.46.0"
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\DumpsOnDemand\\": "src/"

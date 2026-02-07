@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\DumpsOnDemand\Export;
 
-use DumpFileOutput;
-use DumpOutput;
+use MediaWiki\Export\DumpFileOutput;
+use MediaWiki\Export\DumpOutput;
 use function extension_loaded;
 use function wfLogWarning;
 

@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\DumpsOnDemand\Backend;
 
-use DumpOutput;
+use MediaWiki\Export\DumpOutput;
 use MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory;
 
 /**

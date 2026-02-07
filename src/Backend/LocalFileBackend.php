@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\DumpsOnDemand\Backend;
 
-use Config;
+use MediaWiki\Config\Config;
 use MediaWiki\Extension\DumpsOnDemand\Export\OutputSinkFactory;
 use MediaWiki\WikiMap\WikiMap;
 use function file_exists;
