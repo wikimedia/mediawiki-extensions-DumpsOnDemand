@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"dumpsondemand-desc": "Waxay u oggolaanaysaa isticmaaleyaasha mudnaanta leh inay codsadaan nuqullo xogeedka kaydka xogta",
+	"requestdump": "Codso nuqul xogeedka kaydka xogta",
+	"requestdump-text": "Nuqullada xogeedka kaydka xogta waxaa loo isticmaali karaa kayd shakhsiyeed ama bot-yada dayactirka. Dhammaan codsiyada waxaa lagu diiwaangeliyaa [[Special:Log/dumprequest|diiwaanka codsiyada nuqullada xogeedka kaydka xogta]].",
+	"dumpsondemand-current-revisions": "Dhammaan bogagga oo leh keliya nuqullada hadda jira",
+	"dumpsondemand-current-revisions-help": "Nuqulkan ayaa ah kan ugu habboon isticmaalka bot-ka.",
+	"dumpsondemand-all-revisions": "Dhammaan bogagga oo leh taariikhdooda",
+	"dumpsondemand-all-revisions-help": "Nuqulkan ayaa ah kan ugu habboon kaydinta. Digniin: Faylkan wuu aad u weynaan karaa!",
+	"dumpsondemand-request-dump-button-label": "Codso nuqul cusub oo xogeed",
+	"dumpsondemand-dump-already-requested": "Nuqul xogeed hore ayaa loo codsaday",
+	"dumpsondemand-dump-unavailable": "Nuqulkan xogeed weli lama abuurin",
+	"log-name-dumprequest": "Diiwaanka codsiyada nuqullada xogeedka kaydka xogta",
+	"log-description-dumprequest": "Dhacdooyinkani waxay la socdaan marka la codsado nuqul xogeed  kaydka xogta.",
+	"logentry-dumprequest": "{{GENDER:$2|wuxuu codsaday}} nuqul xogeed kaydka xogta",
+	"right-dumpsondemand": "Codso nuqullo xogeed kaydka xogta marka loo baahdo",
+	"action-dumpsondemand": "codso nuqullo xogeed kaydka xogta marka loo baahdo",
+	"right-dumprequestlog": "Eeg diiwaanka codsiyada nuqullada xogeed ee kaydka xogta",
+	"action-dumprequestlog": "eeg diiwaanka codsiyada nuqullada xogeed ee kaydka xogta",
+	"right-dumpsondemand-limit-exempt": "Iska dhaaf wakhtiga xaddidan ee codsiga nuqullada xogeed kaydka xogta",
+	"action-dumpsondemand-limit-exempt": "Iska dhaaf xadka wakhtiga ee codsiga nuqullada xogeed kaydka xogta",
+	"dumpsondemand-dump-requested": "Nuqul xogeed waa la codsaday",
+	"dumpsondemand-filetype-gz": "Nuqullada xogeed waxaa lagu bixin doonaa fayl XML ah oo lagu cadaadiyay gzip.",
+	"dumpsondemand-filetype-bz2": "Nuqullada xogeed waxaa lagu bixin doonaa fayl XML ah oo lagu cadaadiyay bzip2.",
+	"dumpsondemand-filetype-zip": "Nuqullada xogeed waxaa lagu bixin doonaa fayl ZIP ah."
+}
