@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ykhwong"
+			"Ykhwong",
+			"Tensama0415"
 		]
 	},
 	"dumpsondemand-desc": "권한이 있는 사용자가 데이터베이스 덤프를 요청할 수 있게 합니다",
@@ -17,12 +18,12 @@
 	"log-name-dumprequest": "데이터베이스 덤프 요청 기록",
 	"log-description-dumprequest": "데이터베이스 덤프가 요청될 때 이 이벤트를 추적합니다.",
 	"logentry-dumprequest": "데이터베이스 덤프를 {{GENDER:$2|요청했습니다}}",
-	"right-dumpsondemand": "요청 시 데이터베이스 덤프를 요청합니다",
-	"action-dumpsondemand": "요청 시 데이터베이스 덤프를 요청할",
-	"right-dumprequestlog": "데이터베이스 덤프 요청 기록을 봅니다",
-	"action-dumprequestlog": "데이터베이스 덤프 요청 기록을 볼",
-	"right-dumpsondemand-limit-exempt": "데이터베이스 덤프 요청의 시간 제한을 무시합니다",
-	"action-dumpsondemand-limit-exempt": "데이터베이스 덤프 요청의 시간 제한을 무시할",
+	"right-dumpsondemand": "요청 시 데이터베이스 덤프를 요청",
+	"action-dumpsondemand": "요청 시 데이터베이스 덤프를 요청",
+	"right-dumprequestlog": "데이터베이스 덤프 요청 기록을 보기",
+	"action-dumprequestlog": "데이터베이스 덤프 요청 기록을 보기",
+	"right-dumpsondemand-limit-exempt": "데이터베이스 덤프 요청의 시간 제한을 무시",
+	"action-dumpsondemand-limit-exempt": "데이터베이스 덤프 요청의 시간 제한을 무시",
 	"dumpsondemand-dump-requested": "덤프가 요청되었습니다.",
 	"dumpsondemand-filetype-gz": "덤프는 gzip으로 압축된 XML 파일로 제공됩니다.",
 	"dumpsondemand-filetype-bz2": "덤프는 bzip2로 압축된 XML 파일로 제공됩니다.",
