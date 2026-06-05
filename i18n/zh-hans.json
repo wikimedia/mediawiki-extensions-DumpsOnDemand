@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Peterxy12",
-			"StarrySky"
+			"StarrySky",
+			"Peterxy"
 		]
 	},
 	"dumpsondemand-desc": "允许有权限的用户请求数据库转储",
